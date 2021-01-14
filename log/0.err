@@ -1,0 +1,2779 @@
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    author_pg = driver.find_elements_by(By.XPATH, xp)[0].get_attribute('href')
+AttributeError: 'WebDriver' object has no attribute 'find_elements_by'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    author_pg = driver.find_elements_by(By.XPATH, xp)[0].get_attribute('href')
+AttributeError: 'WebDriver' object has no attribute 'find_elements_by'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    author_pg = driver.find_elements_by(By.XPATH, xp)[0].get_attribute('href')
+AttributeError: 'WebDriver' object has no attribute 'find_elements_by'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorname"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f62f3b1d550>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=58295): Max retries exceeded with url: /session/9c269f980dadfe384898930bb5a21b66/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f62f3b1d550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorname"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/pool.py", line 47, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 67, in worker
+    exit_safe(scrapers[core].driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 144, in exit_safe
+    driver.quit()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 153, in quit
+    RemoteWebDriver.quit(self)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 698, in quit
+    self.execute(Command.QUIT)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 28, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f03c59d9d50>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=36609): Max retries exceeded with url: /session/6ac19aec1263b9fcb6ede116cdd2f71b/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03c59d9d50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f03c587c510>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=36609): Max retries exceeded with url: /session/6ac19aec1263b9fcb6ede116cdd2f71b/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03c587c510>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 29, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853d55550>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 25, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=41931): Max retries exceeded with url: /session/9267ea9db925d00860405781b2995ecd/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853d55550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f08544d7710>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=41931): Max retries exceeded with url: /session/9267ea9db925d00860405781b2995ecd/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f08544d7710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853d550d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    exit_safe(scraper.driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 143, in exit_safe
+    driver.close()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=41931): Max retries exceeded with url: /session/9267ea9db925d00860405781b2995ecd/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853d550d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f08544d7e10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 25, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=41931): Max retries exceeded with url: /session/9267ea9db925d00860405781b2995ecd/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f08544d7e10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f08544d76d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 25, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=41931): Max retries exceeded with url: /session/9267ea9db925d00860405781b2995ecd/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f08544d76d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Author Fruttero Lucentini not found! Check.
+Author Oswald de Andrade ratings not found! Check.
+Author Elfriede Jelinek ratings not found! Check.
+Author Pierre Michon ratings not found! Check.
+Author Allen Eskens ratings not found! Check.
+Author Neal Stephenson ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    wrap the run() in a try-except loop so that other unexpected exceptions are caught and the program
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 35, in goodread_rating
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 35, in goodread_rating
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1060, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 566, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 855, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 846, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 288, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/home/mon/Applications/pycharm-community-2019.3.3/plugins/python-ce/helpers/pydev/pydevd.py", line 1099, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/home/mon/Applications/pycharm-community-2019.3.3/plugins/python-ce/helpers/pydev/pydevd.py", line 1114, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 67, in goodread_rating
+    time.sleep(0.3)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 37, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'find_element_by_tag_name'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 16, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 37, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 37, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 82, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 37, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1294, in _send_request
+    if isinstance(body, str):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'find_element_by_tag_name'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 38, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingCount"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Eudora Welty ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Mary Wollstonecraft ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Marcel Pagnol ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Friedrich Duerrematt ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Hubert Selby, Jr. ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Juri Rytcheu ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Richard Hughes', "Maarten 'T Hart", 'Josefine Ottesen ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Robert Gernhardt ratings not found! Check.
+Author Mark Dery ratings not found! Check.
+Author Fruttero Lucentini infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 72, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 45, in wiki_infocard
+    fields = driver.find_elements(By.XPATH, infocard_xp).find_elements(By.XPATH, "//tr")
+AttributeError: 'list' object has no attribute 'find_elements'
+Author Fruttero Lucentini infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 72, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 45, in wiki_infocard
+    fields = driver.find_elements(By.XPATH, infocard_xp).find_elements(By.XPATH, "//tr")
+AttributeError: 'list' object has no attribute 'find_elements'
+Author Fruttero Lucentini infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 72, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 45, in wiki_infocard
+    fields = driver.find_elements(By.XPATH, infocard_xp).find_elements(By.XPATH, "//tr")
+AttributeError: 'list' object has no attribute 'find_elements'
+Author Fruttero Lucentini infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 72, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 45, in wiki_infocard
+    fields = driver.find_elements(By.XPATH, infocard_xp).find_elements(By.XPATH, "//tr")
+AttributeError: 'list' object has no attribute 'find_elements'
+Author John Mortimer infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'WebElement' and 'str'
+Author Jonathon Coe infocard not found! Check.
+Author Rabindranath Tagore infocard not found! Check.
+Author Afonso cruz infocard not found! Check.
+Author Agnes Martin infocard not found! Check.
+Author Helene Hegemann infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Oleg Jurjew infocard not found! Check.
+Author Tony Spiers infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Hermann Broch infocard not found! Check.
+Author Carlos Fuentes infocard not found! Check.
+Author Charlie Brooker infocard not found! Check.
+Author Lawrence Norfolk infocard not found! Check.
+Author Guido Diekmann infocard not found! Check.
+Author Khilifah infocard not found! Check.
+Author Patrick Mcguinness infocard not found! Check.
+Author Ludwig Fels infocard not found! Check.
+Author Jay Mcinerney infocard not found! Check.
+Author Suesskind infocard not found! Check.
+Author Robert Schneider infocard not found! Check.
+Author Torsten Becker infocard not found! Check.
+Author Margaret Elphinstone infocard not found! Check.
+Author Stefanie Zweig infocard not found! Check.
+Author Jaan Kross infocard not found! Check.
+Author Dante infocard not found! Check.
+Author Leila Slimani', "Flan O'Brien", 'Jake Arnott infocard not found! Check.
+Author Kai Hermann infocard not found! Check.
+Author Sólveig Jónsdóttir infocard not found! Check.
+Author Federico Garcia Lorca infocard not found! Check.
+Author Annette Von Droste-Hülshoff infocard not found! Check.
+Author Jaroslav Hasek infocard not found! Check.
+Author George Bataille infocard not found! Check.
+Author Harry Cleaver infocard not found! Check.
+Author Unni Drougge infocard not found! Check.
+Author Leopold Von Sacher-Masoch infocard not found! Check.
+Author Robert Nozick infocard not found! Check.
+Author Owen Parry infocard not found! Check.
+Author Maurice Dantec infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'WebElement' and 'str'
+Author Michael Ebmeyer infocard not found! Check.
+Author Osho infocard not found! Check.
+Author Jean Genet infocard not found! Check.
+Author Regis Jauffret infocard not found! Check.
+Author Thomas Hardy infocard not found! Check.
+Author Pj O Rourke infocard not found! Check.
+Author Charles de Coster infocard not found! Check.
+Author Ewan Mcewan infocard not found! Check.
+Author Andre Dubus Iii infocard not found! Check.
+Author Mao Tse Dung infocard not found! Check.
+Author Gerhard Henschel infocard not found! Check.
+Author Joe Bauer infocard not found! Check.
+Author Erich Maria Remarque infocard not found! Check.
+Author Juan Jose Saer infocard not found! Check.
+Author Portland infocard not found! Check.
+Author Oriana Fallaci infocard not found! Check.
+Author Gao Xingjian infocard not found! Check.
+Author Elliot infocard not found! Check.
+Author Claire Tomalin infocard not found! Check.
+Author Friedrich Duerrematt infocard not found! Check.
+Author Graham Greene infocard not found! Check.
+Author Martin Walser infocard not found! Check.
+Author Drew Karpyshyn infocard not found! Check.
+Author Julia Alvarez infocard not found! Check.
+Author Fritz Mühlenweg infocard not found! Check.
+Author Hart Crane infocard not found! Check.
+Author S.L. Grey infocard not found! Check.
+Author Ruiz Zafon Carlos infocard not found! Check.
+Author Svetislav Basara infocard not found! Check.
+Author Nicole Kraus infocard not found! Check.
+Author Suri Hustvedt infocard not found! Check.
+Author Zadie Smitrh infocard not found! Check.
+Author Jack Spicer infocard not found! Check.
+Author W S Merwin infocard not found! Check.
+Author Mikhail Afanasievich Bulgakov infocard not found! Check.
+Author Ellen Wittlenger infocard not found! Check.
+Author Herbert Rosendorfer infocard not found! Check.
+Author Giovanni Papini infocard not found! Check.
+Author Pg Woodhouse infocard not found! Check.
+Author Alphonse De Lamartine infocard not found! Check.
+Author T. Coraghessan Boyle infocard not found! Check.
+Author Donna Haraway infocard not found! Check.
+Author Leonardo Padura infocard not found! Check.
+Author Emile Zola infocard not found! Check.
+Author Luís Fernando Veríssimo infocard not found! Check.
+Author Santiago Gamboa infocard not found! Check.
+Author Paul Virilio infocard not found! Check.
+Author Peter O. Chotjewitz infocard not found! Check.
+Author Craig Kee Strete infocard not found! Check.
+Author Siegfried Wenzel infocard not found! Check.
+Author Jansson Tove infocard not found! Check.
+Author Jörg Pfennig infocard not found! Check.
+Author Wladimir Kaminer infocard not found! Check.
+Author Jason Fforde infocard not found! Check.
+Author Willem Frederik Hermans infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Hermann Ungar infocard not found! Check.
+Author Günther Anders infocard not found! Check.
+Author Paolo Giordano infocard not found! Check.
+Author Zsuzsa Bank infocard not found! Check.
+Author Per Hagman infocard not found! Check.
+Author Eugene Ionesco infocard not found! Check.
+Author Astrid Rosenfeld infocard not found! Check.
+Author Kent Nerburn infocard not found! Check.
+Author Ken Kesey infocard not found! Check.
+Author Jim Carroll infocard not found! Check.
+Author Philipp Meyer infocard not found! Check.
+Author Lolita Pille infocard not found! Check.
+Author Christian Morgenstern infocard not found! Check.
+Author Yeroslav Hasek infocard not found! Check.
+Author Emilie Autumn infocard not found! Check.
+Author Ahmet Büke infocard not found! Check.
+Author Booth Tarkington infocard not found! Check.
+Author Edward Thomas infocard not found! Check.
+Author Werner Pieper infocard not found! Check.
+Author Zamyatin infocard not found! Check.
+Author Charles Sanders Peirce', "Flann O'Brien", 'LJ Cohen infocard not found! Check.
+Author Sharon Olds infocard not found! Check.
+Author Hanna Jameson infocard not found! Check.
+Author Johan Harstad infocard not found! Check.
+Author David Bowman infocard not found! Check.
+Author Friedrich Nietzsche infocard not found! Check.
+Author Lev Tolstoy infocard not found! Check.
+Author Xavier Marias infocard not found! Check.
+Author Andreas Neumeister infocard not found! Check.
+Author Barbara Noack infocard not found! Check.
+Author Curtis White infocard not found! Check.
+Author Bruno Latour infocard not found! Check.
+Author Wally Lamb infocard not found! Check.
+Author Julio Cortázar infocard not found! Check.
+Author Lana Lux infocard not found! Check.
+Author Richard Rodriguez infocard not found! Check.
+Author Linus Volkmann infocard not found! Check.
+Author Erik Beckman infocard not found! Check.
+Author Fyodor Dostoyevsky infocard not found! Check.
+Author Inger Christensen infocard not found! Check.
+Author Josef Haslinger infocard not found! Check.
+Author Elizabeth Gaskell infocard not found! Check.
+Author Katja Lange-Müller infocard not found! Check.
+Author Ben Franklin infocard not found! Check.
+Author Pierre de Ronsard infocard not found! Check.
+Author Joerg Fauser infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Euclides da cunha infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author William Godwin infocard not found! Check.
+Author H. L. Mencken infocard not found! Check.
+Author Werther Damien Sevahc infocard not found! Check.
+Author Botho Strauß infocard not found! Check.
+Author Wolf Haas infocard not found! Check.
+Author Robert Musil infocard not found! Check.
+Author Alvaro Mutis infocard not found! Check.
+Author Doyle infocard not found! Check.
+Author Paul Ricœur infocard not found! Check.
+Author Jean-Louis Fournier infocard not found! Check.
+Author Alphonse Daudet infocard not found! Check.
+Author Valerie Solanas infocard not found! Check.
+Author Ivan Goncharov infocard not found! Check.
+Author Charly M. Purple infocard not found! Check.
+Author Nicolas Mathieu infocard not found! Check.
+Author Wolfgang Bauer infocard not found! Check.
+Author Vladislav Krapivin infocard not found! Check.
+Author Ewald Arenz infocard not found! Check.
+Author Beigbeder infocard not found! Check.
+Author Antje Ravic Strubel infocard not found! Check.
+Author Ann Bannon infocard not found! Check.
+Author J. K. Rollings infocard not found! Check.
+Author Karl Marx infocard not found! Check.
+Author Robert Price infocard not found! Check.
+Author Walter M. Miller Jr. infocard not found! Check.
+Author Lima Barreto infocard not found! Check.
+Author Justejn Gorder infocard not found! Check.
+Author Martel infocard not found! Check.
+Author Guillermo Gomez Pena infocard not found! Check.
+Author Henry Rollins infocard not found! Check.
+Author Dune infocard not found! Check.
+Author Walt Disney infocard not found! Check.
+Author Louis Althusser infocard not found! Check.
+Author Eugenio Montale infocard not found! Check.
+Author Miguel De Cervantes infocard not found! Check.
+Author Alexander Solzenhistyn infocard not found! Check.
+Author Joseph Heller infocard not found! Check.
+Author Dave Gray infocard not found! Check.
+Author J.V. Eichendorff infocard not found! Check.
+Author Lynne Reid Banks infocard not found! Check.
+Author William Makepeace Thackeray infocard not found! Check.
+Author Alfred Komarek infocard not found! Check.
+Author Charles Baudelaire infocard not found! Check.
+Author Fleur Jaeggy infocard not found! Check.
+Author Julie Buxbaum infocard not found! Check.
+Author Roberto Pazzi infocard not found! Check.
+Author Niklas Luhmann infocard not found! Check.
+Author Michel De Montaigne infocard not found! Check.
+Author Wiglaf Droste infocard not found! Check.
+Author Ernst Gombrich infocard not found! Check.
+Author Mare Kandre infocard not found! Check.
+Author Jess Row infocard not found! Check.
+Author Leonora Carrington infocard not found! Check.
+Author Jürgen Becker infocard not found! Check.
+Author Toni Morisson infocard not found! Check.
+Author Pablo Neruda infocard not found! Check.
+Author Paul Maar infocard not found! Check.
+Author Regis De Sa Moeira infocard not found! Check.
+Author Heinz Strunk infocard not found! Check.
+Author Eisenstein infocard not found! Check.
+Author Cristovão Tezza infocard not found! Check.
+Author Eca De Queiros infocard not found! Check.
+Author Jules Renard infocard not found! Check.
+Author Matt Roof infocard not found! Check.
+Author Tomas Eloy Martinez infocard not found! Check.
+Author Marçal Aquino infocard not found! Check.
+Author Bridget Jones infocard not found! Check.
+Author Paula Vogel infocard not found! Check.
+Author Michal Ajvaz infocard not found! Check.
+Author Kent Nelson infocard not found! Check.
+Author Aldous Huxley infocard not found! Check.
+Author Sergio Bambaren infocard not found! Check.
+Author Jacques Derrida infocard not found! Check.
+Author Carina Bartsch infocard not found! Check.
+Author Lewis Hyde infocard not found! Check.
+Author Terry Winters infocard not found! Check.
+Author Alexander Cockburn infocard not found! Check.
+Author Vladmir Nabakov infocard not found! Check.
+Author David Martin infocard not found! Check.
+Author Olivier Adam infocard not found! Check.
+Author Andre Kertesz infocard not found! Check.
+Author Erich Hackl infocard not found! Check.
+Author Peter Van Straaten infocard not found! Check.
+Author Stephen Fry infocard not found! Check.
+Author Henry Bauchau infocard not found! Check.
+Author Hardy infocard not found! Check.
+Author Jeremy Strong infocard not found! Check.
+Author DAISY JOHNSON infocard not found! Check.
+Author Spinoza infocard not found! Check.
+Author JP Donleavy infocard not found! Check.
+Author Peter Hathaway Capstick infocard not found! Check.
+Author Dulce Chacón infocard not found! Check.
+Author Tom Carson infocard not found! Check.
+Author Jt Leroy infocard not found! Check.
+Author Adam Thirlwell infocard not found! Check.
+Author Luise Mühlbach infocard not found! Check.
+Author Lou A. Probsthayn infocard not found! Check.
+Author Jean Pierre Luminet infocard not found! Check.
+Author Delibes infocard not found! Check.
+Author Jünger infocard not found! Check.
+Author Xabier Cordal infocard not found! Check.
+Author Isabel Alende infocard not found! Check.
+Author Patrick Mccabe infocard not found! Check.
+Author Marlen Haushofer infocard not found! Check.
+Author Rafik Shami infocard not found! Check.
+Author Eli Amir infocard not found! Check.
+Author Giuseppe Culicchia infocard not found! Check.
+Author Mark Slouka infocard not found! Check.
+Author Romana Petri infocard not found! Check.
+Author David Starkey', "Madelein L'engle", 'Antonio Lobo Antunes infocard not found! Check.
+Author Kevin Brooks infocard not found! Check.
+Author Johan Huizinga infocard not found! Check.
+Author Laure Wyss infocard not found! Check.
+Author Tom Lanoye infocard not found! Check.
+Author Marvin Cohen infocard not found! Check.
+Author Martin Buber infocard not found! Check.
+Author Naylor infocard not found! Check.
+Author Suter Martin infocard not found! Check.
+Author Lina Kostenko infocard not found! Check.
+Author Wolfram Von Eschenbach infocard not found! Check.
+Author Wolf Wondratschek infocard not found! Check.
+Author Travis infocard not found! Check.
+Author Cornelia Otis Skinner infocard not found! Check.
+Author Javier Ruescas infocard not found! Check.
+Author Francois Lelord infocard not found! Check.
+Author Magriet De Moor infocard not found! Check.
+Author Wassily Kandinsky infocard not found! Check.
+Author Babel infocard not found! Check.
+Author Joseph Moncure March infocard not found! Check.
+Author Ian Flemin infocard not found! Check.
+Author Marin Preda infocard not found! Check.
+Author Hans Henny Jahnn infocard not found! Check.
+Author James Wilson infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name, scrapers[core])
+TypeError: goodread_rating() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingValue"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Fernand Pouillon ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'bool' object has no attribute 'split'
+Author Michael David Lukas ratings not found! Check.
+Author Lori Lansens ratings not found! Check.
+Author Jeff Strand ratings not found! Check.
+Author Melissa Lucashenko ratings not found! Check.
+Author Daria Bignardi ratings not found! Check.
+Author Rodrigo Hasbun ratings not found! Check.
+Author David Day ratings not found! Check.
+Author John Edward Williams ratings not found! Check.
+Author Antoine Laurain ratings not found! Check.
+Author Wolfgang Bauer ratings not found! Check.
+Author Antonio Orejudo ratings not found! Check.
+Author Joann Fluke ratings not found! Check.
+Author Ewald Arenz ratings not found! Check.
+Author Antje Ravic Strubel ratings not found! Check.
+Author Usher ratings not found! Check.
+Author Paulo Coelho ratings not found! Check.
+Author Niall Williams ratings not found! Check.
+Author Catherine Banner ratings not found! Check.
+Author Column Mccann ratings not found! Check.
+Author Howard Jones ratings not found! Check.
+Author Rory Power ratings not found! Check.
+Author Claudia keelan ratings not found! Check.
+Author Genevieve Valentine ratings not found! Check.
+Author Joseph Monninger ratings not found! Check.
+Author Steve Tesich ratings not found! Check.
+Author Kevin Sampson ratings not found! Check.
+Author James Tate ratings not found! Check.
+Author Dune ratings not found! Check.
+Author Nickolas Butler ratings not found! Check.
+Author Kyle Mills ratings not found! Check.
+Author Walt Disney ratings not found! Check.
+Author Dave Gray ratings not found! Check.
+Author Josh Sundquist ratings not found! Check.
+Author Julie Buxbaum ratings not found! Check.
+Author Francesca Melandri ratings not found! Check.
+Author Tom Spanbauer ratings not found! Check.
+Author Felice Picano ratings not found! Check.
+Author Simon Yates ratings not found! Check.
+Author Zoe Jenny ratings not found! Check.
+Author Amy Gerstler ratings not found! Check.
+Author Jorge Franco ratings not found! Check.
+Author Nina allan ratings not found! Check.
+Author Cristovão Tezza ratings not found! Check.
+Author Marc-Uwe Kling ratings not found! Check.
+Author Michael Cunningham ratings not found! Check.
+Author Dmitry Glukhovsky ratings not found! Check.
+Author Marçal Aquino ratings not found! Check.
+Author R. Lee Smith ratings not found! Check.
+Author marianne Wiggins ratings not found! Check.
+Author Dr Johnson ratings not found! Check.
+Author Oliver Bottini ratings not found! Check.
+Author Tom Carson ratings not found! Check.
+Author Isabel Alende ratings not found! Check.
+Author Eli Amir ratings not found! Check.
+Author Mark Slouka ratings not found! Check.
+Author Romana Petri ratings not found! Check.
+Author Tom Lanoye ratings not found! Check.
+Author Brian Catling ratings not found! Check.
+Author Wolfram Von Eschenbach ratings not found! Check.
+Author Suki Kim ratings not found! Check.
+Author Travis ratings not found! Check.
+Author Javier Ruescas ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Sarah Chavez ratings not found! Check.
+Author Camille Bordas ratings not found! Check.
+Author Chrétien de Troyes ratings not found! Check.
+Author August Kleinzahler ratings not found! Check.
+Author Celine Minard ratings not found! Check.
+Author Benn ratings not found! Check.
+Author Emilie Autumn ratings not found! Check.
+Author Robert Alexander ratings not found! Check.
+Author Carys Davies ratings not found! Check.
+Author Mj Demarco ratings not found! Check.
+Author Charlie Hustson ratings not found! Check.
+Author Frank Cho ratings not found! Check.
+Author Christopher G. Moore ratings not found! Check.
+Author Danez Smith ratings not found! Check.
+Author Alina Bronsky ratings not found! Check.
+Author Colum Mccann ratings not found! Check.
+Author Amy Gerstler ratings not found! Check.
+Author Boccaccio ratings not found! Check.
+Author Don Paterson ratings not found! Check.
+Author Francesca Simon ratings not found! Check.
+Author Ellen Hopkins ratings not found! Check.
+Author Aldo Nove ratings not found! Check.
+Author David Lindsey ratings not found! Check.
+Author Amor Towles ratings not found! Check.
+Author Zoe Jenny ratings not found! Check.
+Author Seneca ratings not found! Check.
+Author James Worthy ratings not found! Check.
+Author Gustavo Martín Garzo ratings not found! Check.
+Author Fielding ratings not found! Check.
+Author Jay Mcinerney ratings not found! Check.
+Author Felice Picano ratings not found! Check.
+Author Doris Knecht ratings not found! Check.
+Author Patrick Mcguinness ratings not found! Check.
+Author J. Robert Lennon ratings not found! Check.
+Author Etgar Keret ratings not found! Check.
+Author Jon Krakauer ratings not found! Check.
+Author Dörte Hansen ratings not found! Check.
+Author Milena Agus ratings not found! Check.
+Author Hanna Jameson ratings not found! Check.
+Author Jonathan Safran Foer ratings not found! Check.
+Author De Botton ratings not found! Check.
+Author Daria Bignardi ratings not found! Check.
+Author Gerald Messadieu ratings not found! Check.
+Author Wolfgang Bauer ratings not found! Check.
+Author Earnest Cline ratings not found! Check.
+Author Otto De Kat ratings not found! Check.
+Author Philippa Gregory ratings not found! Check.
+Author Martin Page ratings not found! Check.
+Author Dolores Reyes ratings not found! Check.
+Author Joann Fluke ratings not found! Check.
+Author Donne ratings not found! Check.
+Author Christian Morgenstern ratings not found! Check.
+Author T. Coraghessan Boyle ratings not found! Check.
+Author Charles Belfoure ratings not found! Check.
+Author Thomas Perry ratings not found! Check.
+Author Chuck ratings not found! Check.
+Author Ada Philips ratings not found! Check.
+Author Genevieve Valentine ratings not found! Check.
+Author Emily Ruskovich ratings not found! Check.
+Author Esi edugyan ratings not found! Check.
+Author Paolo Cognetti ratings not found! Check.
+Author Kevin Sampson ratings not found! Check.
+Author Nathaniel Mackey ratings not found! Check.
+Author Ewald Arenz ratings not found! Check.
+Author Arundhati Roy ratings not found! Check.
+Author David Day ratings not found! Check.
+Author Sefi Atta ratings not found! Check.
+Author Laurence Shames ratings not found! Check.
+Author Thomas Coraghessan Boyle ratings not found! Check.
+Author Irwin Welsh ratings not found! Check.
+Author Nickolas Butler ratings not found! Check.
+Author Tom Leonard ratings not found! Check.
+Author Adam Rex ratings not found! Check.
+Author Charles allen ratings not found! Check.
+Author Chretien des Troyes ratings not found! Check.
+Author Will mcintosh ratings not found! Check.
+Author Horacio Salas ratings not found! Check.
+Author Ian Monk ratings not found! Check.
+Author Coudenhove-Kalergi ratings not found! Check.
+Author Marcela Serrano ratings not found! Check.
+Author Max Allan Collins ratings not found! Check.
+Author Kaz Cooke ratings not found! Check.
+Author Lisa McInerney ratings not found! Check.
+Author Dmitry Glukhovsky ratings not found! Check.
+Author Bach ratings not found! Check.
+Author Waris Diries ratings not found! Check.
+Author Christopher Shea ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Ulla Trenter ratings not found! Check.
+Author François Mauriac ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Fabricio Carpinejar ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Sarah Chavez ratings not found! Check.
+Author Chrétien de Troyes ratings not found! Check.
+Author August Kleinzahler ratings not found! Check.
+Author Celine Minard ratings not found! Check.
+Author Benn ratings not found! Check.
+Author Emilie Autumn ratings not found! Check.
+Author Robert Alexander ratings not found! Check.
+Author Carys Davies ratings not found! Check.
+Author Mj Demarco ratings not found! Check.
+Author Charlie Hustson ratings not found! Check.
+Author Frank Cho ratings not found! Check.
+Author Christopher G. Moore ratings not found! Check.
+Author Danez Smith ratings not found! Check.
+Author Alina Bronsky ratings not found! Check.
+Author Colum Mccann ratings not found! Check.
+Author Amy Gerstler ratings not found! Check.
+Author Boccaccio ratings not found! Check.
+Author Don Paterson ratings not found! Check.
+Author Francesca Simon ratings not found! Check.
+Author Ellen Hopkins ratings not found! Check.
+Author Aldo Nove ratings not found! Check.
+Author David Lindsey ratings not found! Check.
+Author Amor Towles ratings not found! Check.
+Author Zoe Jenny ratings not found! Check.
+Author Seneca ratings not found! Check.
+Author James Worthy ratings not found! Check.
+Author Gustavo Martín Garzo ratings not found! Check.
+Author Fielding ratings not found! Check.
+Author Jay Mcinerney ratings not found! Check.
+Author Felice Picano ratings not found! Check.
+Author Doris Knecht ratings not found! Check.
+Author Patrick Mcguinness ratings not found! Check.
+Author J. Robert Lennon ratings not found! Check.
+Author Etgar Keret ratings not found! Check.
+Author Jon Krakauer ratings not found! Check.
+Author Dörte Hansen ratings not found! Check.
+Author Milena Agus ratings not found! Check.
+Author Hanna Jameson ratings not found! Check.
+Author Jonathan Safran Foer ratings not found! Check.
+Author De Botton ratings not found! Check.
+Author Daria Bignardi ratings not found! Check.
+Author Gerald Messadieu ratings not found! Check.
+Author Wolfgang Bauer ratings not found! Check.
+Author Earnest Cline ratings not found! Check.
+Author Otto De Kat ratings not found! Check.
+Author Philippa Gregory ratings not found! Check.
+Author Martin Page ratings not found! Check.
+Author Dolores Reyes ratings not found! Check.
+Author Joann Fluke ratings not found! Check.
+Author Donne ratings not found! Check.
+Author Christian Morgenstern ratings not found! Check.
+Author T. Coraghessan Boyle ratings not found! Check.
+Author Charles Belfoure ratings not found! Check.
+Author Thomas Perry ratings not found! Check.
+Author Chuck ratings not found! Check.
+Author Ada Philips ratings not found! Check.
+Author Genevieve Valentine ratings not found! Check.
+Author Emily Ruskovich ratings not found! Check.
+Author Esi edugyan ratings not found! Check.
+Author Paolo Cognetti ratings not found! Check.
+Author Kevin Sampson ratings not found! Check.
+Author Nathaniel Mackey ratings not found! Check.
+Author Ewald Arenz ratings not found! Check.
+Author Arundhati Roy ratings not found! Check.
+Author David Day ratings not found! Check.
+Author Sefi Atta ratings not found! Check.
+Author Laurence Shames ratings not found! Check.
+Author Thomas Coraghessan Boyle ratings not found! Check.
+Author Irwin Welsh ratings not found! Check.
+Author Nickolas Butler ratings not found! Check.
+Author Tom Leonard ratings not found! Check.
+Author Adam Rex ratings not found! Check.
+Author Charles allen ratings not found! Check.
+Author Chretien des Troyes ratings not found! Check.
+Author Will mcintosh ratings not found! Check.
+Author Horacio Salas ratings not found! Check.
+Author Ian Monk ratings not found! Check.
+Author Coudenhove-Kalergi ratings not found! Check.
+Author Marcela Serrano ratings not found! Check.
+Author Max Allan Collins ratings not found! Check.
+Author Kaz Cooke ratings not found! Check.
+Author Lisa McInerney ratings not found! Check.
+Author Dmitry Glukhovsky ratings not found! Check.
+Author Bach ratings not found! Check.
+Author Waris Diries ratings not found! Check.
+Author Christopher Shea ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Author Robert Macfarlane ratings not found! Check.
+Author Lily Brett ratings not found! Check.
+Author Alexander Theroux ratings not found! Check.
+Author Sofía Segovia ratings not found! Check.
+Author Reuter ratings not found! Check.
+Author Frank Ronan ratings not found! Check.
+Author Jen Wang ratings not found! Check.
+Author marianne Wiggins ratings not found! Check.
+Author John Green ratings not found! Check.
+Author Mauro Saracino ratings not found! Check.
+Author Arthur Sze ratings not found! Check.
+Author Julie Buxbaum ratings not found! Check.
+Author Ayisha Malik ratings not found! Check.
+Author Albert moers ratings not found! Check.
+Author Natalie Diaz ratings not found! Check.
+Author Glenn Cooper ratings not found! Check.
+Author Albert Espinosa ratings not found! Check.
+Author Abdulrazak Gurnah ratings not found! Check.
+Author Eli Amir ratings not found! Check.
+Author Danielle Bennet ratings not found! Check.
+Author Chaucer ratings not found! Check.
+Author Alejandro Zambra ratings not found! Check.
+Author Debi Gliori ratings not found! Check.
+Author Antanas Vienuolis ratings not found! Check.
+Author Arne Dahl ratings not found! Check.
+Author Augusten Burroughs ratings not found! Check.
+Author Remigiusz Mróz ratings not found! Check.
+Author Alison Moore ratings not found! Check.
+Author Ruff ratings not found! Check.
+Author Suki Kim ratings not found! Check.
+Author Fernando Aramburu ratings not found! Check.
+Author Walt Disney ratings not found! Check.
+Author Eric Kraft ratings not found! Check.
+Author Andy Stanton ratings not found! Check.
+Author Howard Jones ratings not found! Check.
+Author Benedict Wells ratings not found! Check.
+Author Cesar Vidal ratings not found! Check.
+Author Gonzalo Torné ratings not found! Check.
+Author Andrew Holleran ratings not found! Check.
+Author Robert Mason ratings not found! Check.
+Author Brooks ratings not found! Check.
+Author Brian Catling ratings not found! Check.
+Author Eshkol Nevo ratings not found! Check.
+Author Paul Hamper ratings not found! Check.
+Author Mikael Torfason ratings not found! Check.
+Author Craig Davidson ratings not found! Check.
+Author Toshikazu Kawaguchi ratings not found! Check.
+Author HOMER ratings not found! Check.
+Author Everet True ratings not found! Check.
+Author Toby Litt ratings not found! Check.
+Author John Adams ratings not found! Check.
+Author Àusias March ratings not found! Check.
+Author Jorge Franco ratings not found! Check.
+Author Nell Zink ratings not found! Check.
+Author Cristovão Tezza ratings not found! Check.
+Author David Housewright ratings not found! Check.
+Author Jennings ratings not found! Check.
+Author Homer ratings not found! Check.
+Author Ellen Kushner ratings not found! Check.
+Author Romana Petri ratings not found! Check.
+Author Marc-Uwe Kling ratings not found! Check.
+Author Alejandra Costamagna ratings not found! Check.
+Author Margaret Atwood ratings not found! Check.
+Author James Hannaham ratings not found! Check.
+Author Alice Faye Duncan ratings not found! Check.
+Author Bruce Fink ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Morgenstern ratings not found! Check.
+Author Christina Brudereck ratings not found! Check.
+Author Charlotte wood ratings not found! Check.
+Author Stephen Vizinczey ratings not found! Check.
+Author Hans Faverey ratings not found! Check.
+Author Alastair Humphreys ratings not found! Check.
+Author B Traven ratings not found! Check.
+Author Dan Fante ratings not found! Check.
+Author Josh Bazell ratings not found! Check.
+Author Greg Mortenson ratings not found! Check.
+Author Joachim Meyerhoff ratings not found! Check.
+Author Helen Fields ratings not found! Check.
+Author Ana Gorría ratings not found! Check.
+Author William Marshall ratings not found! Check.
+Author Matt Ruff ratings not found! Check.
+Author Philippe Djian ratings not found! Check.
+Author Jennifer Lancaster ratings not found! Check.
+Author Landvik ratings not found! Check.
+Author Alexander Maksik ratings not found! Check.
+Author David Simon ratings not found! Check.
+Author Eimear Mcbride ratings not found! Check.
+Author Nikesh Shukla ratings not found! Check.
+Author Antonioni Michelangelo ratings not found! Check.
+Author Martyn Bedford ratings not found! Check.
+Author Wayne Chapman ratings not found! Check.
+Author Boris Fishman ratings not found! Check.
+Author Richard Zimler ratings not found! Check.
+Author Murasaki Shikibu ratings not found! Check.
+Author Joe Ide ratings not found! Check.
+Author Latife Tenkin ratings not found! Check.
+Author Zahn ratings not found! Check.
+Author Catherine Banner ratings not found! Check.
+Author R. Lee Smith ratings not found! Check.
+Author Dave Gray ratings not found! Check.
+Author Rachel Kadish ratings not found! Check.
+Author Jon Mcgregor ratings not found! Check.
+Author Geoffrey Chaucer ratings not found! Check.
+Author Marilyn Chin ratings not found! Check.
+Author Melissa Fleming ratings not found! Check.
+Author Dune ratings not found! Check.
+Author Sergio Chejfec ratings not found! Check.
+Author Heather Christle ratings not found! Check.
+Author Favel Parrett ratings not found! Check.
+Author Anita Amirrezvani ratings not found! Check.
+Author Anjali Sachdeva ratings not found! Check.
+Author Linus Volkmann ratings not found! Check.
+Author Giles Smith ratings not found! Check.
+Author Vic Hislop ratings not found! Check.
+Author Tan ratings not found! Check.
+Author Austin ratings not found! Check.
+Author Christopher Rice ratings not found! Check.
+Author Yuri Herrera ratings not found! Check.
+Author Dimitri Verhulst ratings not found! Check.
+Author Craig Kee Strete ratings not found! Check.
+Author Elizabeth Mccracken ratings not found! Check.
+Author Iain Rob Wright ratings not found! Check.
+Author Katja Millay ratings not found! Check.
+Author Rory Power ratings not found! Check.
+Author Jennifer Clement ratings not found! Check.
+Author jeff Talarigo ratings not found! Check.
+Author Sarah Chavez ratings not found! Check.
+Author Camille Bordas ratings not found! Check.
+Author Chrétien de Troyes ratings not found! Check.
+Author August Kleinzahler ratings not found! Check.
+Author Celine Minard ratings not found! Check.
+Author Benn ratings not found! Check.
+Author Emilie Autumn ratings not found! Check.
+Author Robert Alexander ratings not found! Check.
+Author Carys Davies ratings not found! Check.
+Author Mj Demarco ratings not found! Check.
+Author Charlie Hustson ratings not found! Check.
+Author Frank Cho ratings not found! Check.
+Author Christopher G. Moore ratings not found! Check.
+Author Danez Smith ratings not found! Check.
+Author Alina Bronsky ratings not found! Check.
+Author Colum Mccann ratings not found! Check.
+Author Amy Gerstler ratings not found! Check.
+Author Boccaccio ratings not found! Check.
+Author Don Paterson ratings not found! Check.
+Author Francesca Simon ratings not found! Check.
+Author Ellen Hopkins ratings not found! Check.
+Author Aldo Nove ratings not found! Check.
+Author David Lindsey ratings not found! Check.
+Author Amor Towles ratings not found! Check.
+Author Zoe Jenny ratings not found! Check.
+Author Seneca ratings not found! Check.
+Author James Worthy ratings not found! Check.
+Author Gustavo Martín Garzo ratings not found! Check.
+Author Fielding ratings not found! Check.
+Author Jay Mcinerney ratings not found! Check.
+Author Felice Picano ratings not found! Check.
+Author Doris Knecht ratings not found! Check.
+Author Patrick Mcguinness ratings not found! Check.
+Author J. Robert Lennon ratings not found! Check.
+Author Etgar Keret ratings not found! Check.
+Author Jon Krakauer ratings not found! Check.
+Author Dörte Hansen ratings not found! Check.
+Author Milena Agus ratings not found! Check.
+Author Hanna Jameson ratings not found! Check.
+Author Jonathan Safran Foer ratings not found! Check.
+Author De Botton ratings not found! Check.
+Author Daria Bignardi ratings not found! Check.
+Author Gerald Messadieu ratings not found! Check.
+Author Wolfgang Bauer ratings not found! Check.
+Author Earnest Cline ratings not found! Check.
+Author Otto De Kat ratings not found! Check.
+Author Philippa Gregory ratings not found! Check.
+Author Martin Page ratings not found! Check.
+Author Dolores Reyes ratings not found! Check.
+Author Joann Fluke ratings not found! Check.
+Author Donne ratings not found! Check.
+Author Christian Morgenstern ratings not found! Check.
+Author T. Coraghessan Boyle ratings not found! Check.
+Author Charles Belfoure ratings not found! Check.
+Author Thomas Perry ratings not found! Check.
+Author Chuck ratings not found! Check.
+Author Ada Philips ratings not found! Check.
+Author Genevieve Valentine ratings not found! Check.
+Author Emily Ruskovich ratings not found! Check.
+Author Esi edugyan ratings not found! Check.
+Author Paolo Cognetti ratings not found! Check.
+Author Kevin Sampson ratings not found! Check.
+Author Nathaniel Mackey ratings not found! Check.
+Author Ewald Arenz ratings not found! Check.
+Author Arundhati Roy ratings not found! Check.
+Author David Day ratings not found! Check.
+Author Sefi Atta ratings not found! Check.
+Author Laurence Shames ratings not found! Check.
+Author Thomas Coraghessan Boyle ratings not found! Check.
+Author Irwin Welsh ratings not found! Check.
+Author Nickolas Butler ratings not found! Check.
+Author Tom Leonard ratings not found! Check.
+Author Adam Rex ratings not found! Check.
+Author Charles allen ratings not found! Check.
+Author Chretien des Troyes ratings not found! Check.
+Author Will mcintosh ratings not found! Check.
+Author Horacio Salas ratings not found! Check.
+Author Ian Monk ratings not found! Check.
+Author Coudenhove-Kalergi ratings not found! Check.
+Author Marcela Serrano ratings not found! Check.
+Author Max Allan Collins ratings not found! Check.
+Author Kaz Cooke ratings not found! Check.
+Author Lisa McInerney ratings not found! Check.
+Author Dmitry Glukhovsky ratings not found! Check.
+Author Bach ratings not found! Check.
+Author Tobias Hill ratings not found! Check.
+Author Waris Diries ratings not found! Check.
+Author Christopher Shea ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'

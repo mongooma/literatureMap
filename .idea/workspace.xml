@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c83bdf7f-0bd6-4241-b86f-6533f2cf6552" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kDSVkKTCbkq9LsiNujfff27Nib" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/log" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.utils">
+    <configuration name="cluster_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="literatureMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cluster_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="goodreads_rating" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="literatureMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/goodreads_rating.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="map_scrape_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="literatureMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/map_scrape_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="literatureMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wiki_infocard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="literatureMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wiki_infocard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.goodreads_rating" />
+        <item itemvalue="Python.wiki_infocard" />
+        <item itemvalue="Python.cluster_analysis" />
+        <item itemvalue="Python.map_scrape_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c83bdf7f-0bd6-4241-b86f-6533f2cf6552" name="Default Changelist" comment="" />
+      <created>1605233694538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605233694538</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="909" y="490" width="551" height="311" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1607813699972">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="909" y="490" width="551" height="311" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1607813699972" />
+    <state x="685" y="491" width="1645" height="590" key="#xdebugger.XInspectDialog" timestamp="1605238325450">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="685" y="491" width="1645" height="590" key="#xdebugger.XInspectDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1605238325450" />
+    <state x="645" y="714" width="797" height="677" key="#xdebugger.evaluate" timestamp="1605938271821">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="645" y="714" width="797" height="677" key="#xdebugger.evaluate/0.27.2560.1413@0.27.2560.1413" timestamp="1605938271821" />
+    <state width="405" height="568" key="DebuggerActiveHint" timestamp="1605240274816">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="405" height="568" key="DebuggerActiveHint/0.27.2560.1413@0.27.2560.1413" timestamp="1605240274816" />
+    <state width="2539" height="365" key="GridCell.Tab.0.bottom" timestamp="1605938832157">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.0.bottom/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832157" />
+    <state width="2539" height="365" key="GridCell.Tab.0.center" timestamp="1605938832155">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.0.center/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832155" />
+    <state width="2539" height="365" key="GridCell.Tab.0.left" timestamp="1605938832153">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.0.left/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832153" />
+    <state width="2539" height="365" key="GridCell.Tab.0.right" timestamp="1605938832156">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.0.right/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832156" />
+    <state width="2539" height="365" key="GridCell.Tab.1.bottom" timestamp="1605938832160">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.1.bottom/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832160" />
+    <state width="2539" height="365" key="GridCell.Tab.1.center" timestamp="1605938832159">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.1.center/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832159" />
+    <state width="2539" height="365" key="GridCell.Tab.1.left" timestamp="1605938832158">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.1.left/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832158" />
+    <state width="2539" height="365" key="GridCell.Tab.1.right" timestamp="1605938832160">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2539" height="365" key="GridCell.Tab.1.right/0.27.2560.1413@0.27.2560.1413" timestamp="1605938832160" />
+    <state x="899" y="281" key="SettingsEditor" timestamp="1607815433800">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="899" y="281" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1607815433800" />
+    <state x="945" y="368" key="SettingsEditor/0.27.2560.1413@0.27.2560.1413" timestamp="1605233728764" />
+    <state width="1017" height="706" key="XDebugger.FullValuePopup" timestamp="1605938081523">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="1017" height="706" key="XDebugger.FullValuePopup/0.27.2560.1413@0.27.2560.1413" timestamp="1605938081523" />
+    <state x="1220" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1607486039389">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1220" y="425" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1607486039389" />
+    <state x="1627" y="561" key="com.intellij.ide.util.TipDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1605237505512" />
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1605935066863">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1605935066863" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wiki_infocard.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/goodreads_rating.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/goodreads_rating.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>391</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

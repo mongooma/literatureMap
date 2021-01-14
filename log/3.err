@@ -1,0 +1,3229 @@
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorname"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    author_pg = driver.find_elements_by(By.XPATH, xp)[0].get_attribute('href')
+AttributeError: 'WebDriver' object has no attribute 'find_elements_by'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 46, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    author_pg = driver.find_elements_by(By.XPATH, xp)[0].get_attribute('href')
+AttributeError: 'WebDriver' object has no attribute 'find_elements_by'
+Author Jonathon Coe not found! Check.
+Author Nick Lane not found! Check.
+Author Fruttero Lucentini not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorname"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fec9cb87bd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=57033): Max retries exceeded with url: /session/923039a91f4708fceb66fe815be20439/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fec9cb87bd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fec9cd19590>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=57033): Max retries exceeded with url: /session/923039a91f4708fceb66fe815be20439/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fec9cd19590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fec9c48e0d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=57033): Max retries exceeded with url: /session/923039a91f4708fceb66fe815be20439/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fec9c48e0d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Author Fruttero Lucentini not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 275, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 275, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f03c58741d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=44431): Max retries exceeded with url: /session/0d8090e0381696c9f66f80123d8312f2/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03c58741d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 28, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f03c58b35d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 64, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 24, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=44431): Max retries exceeded with url: /session/0d8090e0381696c9f66f80123d8312f2/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03c58b35d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 275, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 275, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853df3bd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    exit_safe(scraper.driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 143, in exit_safe
+    driver.close()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+Author Fruttero Lucentini not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853bb1ad0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    exit_safe(scraper.driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 143, in exit_safe
+    driver.close()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853bb1ad0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0854b63e50>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0854b63e50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853c0f090>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    exit_safe(scraper.driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 143, in exit_safe
+    driver.close()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853df3bd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853c0f090>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f08540aa410>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in goodread_rating
+    format(search_term))
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f08540aa410>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0853e37a10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 72, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 20, in goodread_rating
+    exit_safe(scraper.driver)
+  File "/home/mon/Documents/literatureMap/utils.py", line 143, in exit_safe
+    driver.close()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 765, in urlopen
+    **response_kw
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=49191): Max retries exceeded with url: /session/081e2db06a415b6132d316061cf264dc/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0853e37a10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 37, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 305, in find_element_by_tag_name
+    return self.find_element(by=By.TAG_NAME, value=name)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorName"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 83, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 41, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 84, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 42, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+NameError: name 'scrapers' is not defined
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Emile Zola ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Mcewan, Ian ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'bool' object has no attribute 'split'
+Author Mikhail Bulgakov ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 39, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingValue"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Author Monique Truong ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 39, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorName"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'bool' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 17, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 39, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 39, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="authorName"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 86, in worker
+    goodread_rating(core, author_name, scrapers[core])
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 43, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Author Uwe Johnson infocard not found! Check.
+Author Olga Martynova infocard not found! Check.
+Author Trygve Gulbranssen infocard not found! Check.
+Author Henry Rider Haggard infocard not found! Check.
+Author Alain Debotton infocard not found! Check.
+Author Honoré de Balzac infocard not found! Check.
+Author Adler Olson infocard not found! Check.
+Author Sandra Cisneros infocard not found! Check.
+Author Margaret Atwood infocard not found! Check.
+Author Margaret Mazzantini infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'WebElement' and 'str'
+Author Eka Kurniawan infocard not found! Check.
+Author Douglas Copland infocard not found! Check.
+Author Charles allen infocard not found! Check.
+Author Rolf Lappert infocard not found! Check.
+Author Richard Hughes', "Maarten 'T Hart", 'Josefine Ottesen infocard not found! Check.
+Author Claire Castillon infocard not found! Check.
+Author Daniel Chavarria infocard not found! Check.
+Author Hans-Ulrich Treichel infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Armonia Somers infocard not found! Check.
+Author Afonso cruz infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'WebElement' and 'str'
+Author Alexander Bushkov infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Taichi Yamada infocard not found! Check.
+Author Naguib Mahfouz infocard not found! Check.
+Author Lori Lansens infocard not found! Check.
+Author Chris Riddell infocard not found! Check.
+Author Graham Masterton infocard not found! Check.
+Author Doyle infocard not found! Check.
+Author Alan Bissett infocard not found! Check.
+Author Heinz Erhardt infocard not found! Check.
+Author David Ives infocard not found! Check.
+Author Vladimir Lenin infocard not found! Check.
+Author Helprin infocard not found! Check.
+Author Leo Huberman infocard not found! Check.
+Author Frederic lenoir infocard not found! Check.
+Author Sasha Sokolov infocard not found! Check.
+Author Valerie Solanas infocard not found! Check.
+Author Ivan Goncharov infocard not found! Check.
+Author Lian Hearn infocard not found! Check.
+Author Antoine Laurain infocard not found! Check.
+Author Charly M. Purple infocard not found! Check.
+Author Patricia Duncker infocard not found! Check.
+Author Alain Robbe Grillet infocard not found! Check.
+Author Daniel Horch infocard not found! Check.
+Author Theodor Storm infocard not found! Check.
+Author Antonio Orejudo infocard not found! Check.
+Author Forrest Carter infocard not found! Check.
+Author Octave Mirbeau infocard not found! Check.
+Author Rafia Zakaria infocard not found! Check.
+Author Niccolo Machiavelli infocard not found! Check.
+Author Vian Boris infocard not found! Check.
+Author Stendahl infocard not found! Check.
+Author François Mauriac infocard not found! Check.
+Author Edouard Louis infocard not found! Check.
+Author Dellilo infocard not found! Check.
+Author John Wyman infocard not found! Check.
+Author Heiner Müller infocard not found! Check.
+Author Catherine Banner infocard not found! Check.
+Author Menasse infocard not found! Check.
+Author Georges Simenon infocard not found! Check.
+Author Oscar Welsh infocard not found! Check.
+Author Emily Dickinson infocard not found! Check.
+Author Isabelle Baumann infocard not found! Check.
+Author Claudia keelan infocard not found! Check.
+Author Justejn Gorder infocard not found! Check.
+Author Joseph Monninger infocard not found! Check.
+Author Martel infocard not found! Check.
+Author Su Tungpo infocard not found! Check.
+Author Steve Tesich infocard not found! Check.
+Author Kevin Sampson infocard not found! Check.
+Author Joe Simpson infocard not found! Check.
+Author Paul Claes infocard not found! Check.
+Author Jean Paul infocard not found! Check.
+Author Erri De Luca infocard not found! Check.
+Author Kyle Mills infocard not found! Check.
+Author Eugenio Montale infocard not found! Check.
+Author Miguel De Cervantes infocard not found! Check.
+Author Lynne Reid Banks infocard not found! Check.
+Author Derek Prince infocard not found! Check.
+Author The Songs Of Distant Earth infocard not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 60, in worker
+    wiki_infocard(core, author_name)
+  File "/home/mon/Documents/literatureMap/wiki_infocard.py", line 41, in wiki_infocard
+    f.write(infocard + '\n')
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Author Fruttero Lucentini infocard not found! Check.
+Author Pierre Michon infocard not found! Check.
+Author Gabriela Garcia Marquez infocard not found! Check.
+Author Armatead Maupin infocard not found! Check.
+Author Allen Eskens infocard not found! Check.
+Author Maarten Hart infocard not found! Check.
+Author Gorky infocard not found! Check.
+Author Steven Jay Gould infocard not found! Check.
+Author William Somerset Maugham infocard not found! Check.
+Author Robert Pfaller infocard not found! Check.
+Author Guido Gozzano infocard not found! Check.
+Author Jarry infocard not found! Check.
+Author Jakob Wassermann infocard not found! Check.
+Author Ludwig Wittgenstein infocard not found! Check.
+Author Miguel Torga infocard not found! Check.
+Author Erich Kästner infocard not found! Check.
+Author C. S. Lewis infocard not found! Check.
+Author Robert Plunkett infocard not found! Check.
+Author Philippe Djian infocard not found! Check.
+Author Hannah Green infocard not found! Check.
+Author Michele Mari infocard not found! Check.
+Author Robert Frost infocard not found! Check.
+Author Gerhard Henschel infocard not found! Check.
+Author Erich Maria Remarque infocard not found! Check.
+Author Walter Höllerer infocard not found! Check.
+Author Portland infocard not found! Check.
+Author Philip Ardagh infocard not found! Check.
+Author Heinrich Harrer infocard not found! Check.
+Author Wilhelm Reich infocard not found! Check.
+Author Roy Jenkins infocard not found! Check.
+Author John Cornwell infocard not found! Check.
+Author Susanna Kaysen infocard not found! Check.
+Author Stendhal infocard not found! Check.
+Author Suri Hustvedt infocard not found! Check.
+Author Boris Akunin infocard not found! Check.
+Author Mikhail Afanasievich Bulgakov infocard not found! Check.
+Author Martin Myers infocard not found! Check.
+Author Gurdjieff infocard not found! Check.
+Author Giovanni Papini infocard not found! Check.
+Author Gwendoline Riley infocard not found! Check.
+Author Honore De Balzac infocard not found! Check.
+Author Adam Haslett infocard not found! Check.
+Author Lermontov infocard not found! Check.
+Author Claudia Toman infocard not found! Check.
+Author Emile Zola infocard not found! Check.
+Author Louis Bayard infocard not found! Check.
+Author William Henry Hudson infocard not found! Check.
+Author Isabel Allende infocard not found! Check.
+Author Ananda Coomaraswamy infocard not found! Check.
+Author Paul Virilio infocard not found! Check.
+Author Florence King infocard not found! Check.
+Author Antanas Vienuolis infocard not found! Check.
+Author Pascal Bruckner infocard not found! Check.
+Author Rahel Varnhagen infocard not found! Check.
+Author Craig Kee Strete infocard not found! Check.
+Author Alice Notley infocard not found! Check.
+Author Jj Voskuil infocard not found! Check.
+Author Mariana Enriquez infocard not found! Check.
+Author Fernando Savater infocard not found! Check.
+Author Welsh infocard not found! Check.
+Author Sadiq Hidayat infocard not found! Check.
+Author Daniel Alarcon infocard not found! Check.
+Author Klaus Modick infocard not found! Check.
+Author Jason Fforde infocard not found! Check.
+Author Carlos Luiz Zafon infocard not found! Check.
+Author Francesco Petrarca infocard not found! Check.
+Author Marguerite Yourcenar infocard not found! Check.
+Author Wolfgang Jeschke infocard not found! Check.
+Author Arthur Schnitzler infocard not found! Check.
+Author Walter Tevis infocard not found! Check.
+Author Magda Szabo infocard not found! Check.
+Author Alex Capus infocard not found! Check.
+Author Amitav Ghosh infocard not found! Check.
+Author Inoue Hisashi infocard not found! Check.
+Author Reşat nuri güntekin infocard not found! Check.
+Author Jonathan Littell infocard not found! Check.
+Author Milann Kundera infocard not found! Check.
+Author Alasdair Gray infocard not found! Check.
+Author Billy Graham infocard not found! Check.
+Author Ango Sakaguchi infocard not found! Check.
+Author Louis Wood infocard not found! Check.
+Author Hoeg infocard not found! Check.
+Author James Hannaham infocard not found! Check.
+Author Lynne North infocard not found! Check.
+Author Darcey Steinke infocard not found! Check.
+Author David Lindsay infocard not found! Check.
+Author Andrea Maria Schenkel infocard not found! Check.
+Author Choderlos de Laclos infocard not found! Check.
+Author Moacyr Scliar infocard not found! Check.
+Author David Herbert Lawrence infocard not found! Check.
+Author Ryuunosuke Akutagawa infocard not found! Check.
+Author Marcus Goodrich infocard not found! Check.
+Author Nabokov Vladimir infocard not found! Check.
+Author Wilson infocard not found! Check.
+Author Barry Macsweeney infocard not found! Check.
+Author Salomo Friedländer infocard not found! Check.
+Author E E Cummings infocard not found! Check.
+Author Andrea Tarabbia infocard not found! Check.
+Author Lars Saaby Christensen infocard not found! Check.
+Author Annie Ernaux infocard not found! Check.
+Author Alexander Kluge infocard not found! Check.
+Author William Marshall infocard not found! Check.
+Author Tanja Raich infocard not found! Check.
+Author Kurt Wohnegut infocard not found! Check.
+Author Elke Heidenreich infocard not found! Check.
+Author Hartmut Geerken infocard not found! Check.
+Author Luke Davies infocard not found! Check.
+Author Naoko Takeuchi infocard not found! Check.
+Author David A. Line infocard not found! Check.
+Author Cruz e Souza infocard not found! Check.
+Author Jean Patrick Manchette infocard not found! Check.
+Author Georgi Gospodinov infocard not found! Check.
+Author Sefi Atta infocard not found! Check.
+Author David Forster Wallace infocard not found! Check.
+Author Charles Maturin infocard not found! Check.
+Author Inge Von Wangenheim infocard not found! Check.
+Author Patrícia Melo infocard not found! Check.
+Author Herman Mellville infocard not found! Check.
+Author Binnie Kirshenbaum infocard not found! Check.
+Author Matt Bell infocard not found! Check.
+Author Clarissa Pinkola Estes infocard not found! Check.
+Author Carmen Laforet infocard not found! Check.
+Author Zsusa Bank infocard not found! Check.
+Author Adolfo Becquer infocard not found! Check.
+Author Nicholas Negroponte infocard not found! Check.
+Author Marlene Haushofer infocard not found! Check.
+Author Philip Eger infocard not found! Check.
+Author Chrétien de Troyes infocard not found! Check.
+Author Bill Knott infocard not found! Check.
+Author Allan Gurganus infocard not found! Check.
+Author Thorne Smith infocard not found! Check.
+Author Coe infocard not found! Check.
+Author Sarah Kirsch infocard not found! Check.
+Author Georg Klein infocard not found! Check.
+Author Enzensberger, Christian infocard not found! Check.
+Author Ellen Wood infocard not found! Check.
+Author Gilles Perrault infocard not found! Check.
+Author Milo Manara infocard not found! Check.
+Author Ines Thorn infocard not found! Check.
+Author Michael Douglas infocard not found! Check.
+Author Franz Kafka infocard not found! Check.
+Author Faye Ginsburg infocard not found! Check.
+Author Irene Dische infocard not found! Check.
+Author Hugh Prather infocard not found! Check.
+Author Martin Kohan infocard not found! Check.
+Author Russel Hoban infocard not found! Check.
+Author Heinrich Laube infocard not found! Check.
+Author Iceberg Slim infocard not found! Check.
+Author Alejandra Pizarnik infocard not found! Check.
+Author Tom Robins infocard not found! Check.
+Author Rainald Goetz infocard not found! Check.
+Author Marilyn French infocard not found! Check.
+Author Gopnik infocard not found! Check.
+Author Pierre La Mure infocard not found! Check.
+Author Chin Ning Chu infocard not found! Check.
+Author David R. Hawkins infocard not found! Check.
+Author Anja Kauranen infocard not found! Check.
+Author Hermann Ungar infocard not found! Check.
+Author Günther Anders infocard not found! Check.
+Author Sylvia Brown infocard not found! Check.
+Author Louise Eldridge infocard not found! Check.
+Author Tomas Ross infocard not found! Check.
+Author Delia Turner infocard not found! Check.
+Author Paolo Giordano infocard not found! Check.
+Author Jen Wang infocard not found! Check.
+Author Frederik Braun infocard not found! Check.
+Author Laura Mclem infocard not found! Check.
+Author Colin Higgins infocard not found! Check.
+Author Moebius infocard not found! Check.
+Author Zsuzsa Bank infocard not found! Check.
+Author Cruz E Souza infocard not found! Check.
+Author Per Hagman infocard not found! Check.
+Author Charlotte Stieglitz infocard not found! Check.
+Author Smith, Zadie infocard not found! Check.
+Author Elsie Johansen infocard not found! Check.
+Author Jesus infocard not found! Check.
+Author Astrid Rosenfeld infocard not found! Check.
+Author Spike Milligan infocard not found! Check.
+Author Kent Nerburn infocard not found! Check.
+Author Francis Nenik infocard not found! Check.
+Author Rollo May infocard not found! Check.
+Author Franz Mon infocard not found! Check.
+Author Arne Dahl infocard not found! Check.
+Author Arnold Bennett infocard not found! Check.
+Author Ulrich Plenzdorf infocard not found! Check.
+Author Kai Meyer infocard not found! Check.
+Author Blanca Varela infocard not found! Check.
+Author Lafferty', "Gabriele D'Annunzio", 'Dorota Maslowska infocard not found! Check.
+Author Landvik infocard not found! Check.
+Author Mikhail Bakhtin infocard not found! Check.
+Author Crap infocard not found! Check.
+Author Vila-Matas infocard not found! Check.
+Author David Lodge infocard not found! Check.
+Author Jim Carroll infocard not found! Check.
+Author Elizabeth Pewsey infocard not found! Check.
+Author Diedrich Diederichsen infocard not found! Check.
+Author Aarto Paasilinna infocard not found! Check.
+Author Martin Mosebach infocard not found! Check.
+Author Lolita Pille infocard not found! Check.
+Author Christian Morgenstern infocard not found! Check.
+Author Paul Brunton infocard not found! Check.
+Author Andre Marx infocard not found! Check.
+Author Yeroslav Hasek infocard not found! Check.
+Author Daniel Glattauer infocard not found! Check.
+Author Emilie Autumn infocard not found! Check.
+Author Munro Alice infocard not found! Check.
+Author Ahmet Büke infocard not found! Check.
+Author Alexander Iwanowitsch Kuprin infocard not found! Check.
+Author Kertin Ekman infocard not found! Check.
+Author Edward Thomas infocard not found! Check.
+Author Werner Pieper infocard not found! Check.
+Author Zamyatin infocard not found! Check.
+Author Alan Spence infocard not found! Check.
+Author Heller infocard not found! Check.
+Author Charles Sanders Peirce', "Flann O'Brien", 'LJ Cohen infocard not found! Check.
+Author Donn Cortez infocard not found! Check.
+Author Gregory Corso infocard not found! Check.
+Author Gilbert Simondon infocard not found! Check.
+Author Sharon Olds infocard not found! Check.
+Author Iain Pears infocard not found! Check.
+Author Sven Lindqvist infocard not found! Check.
+Author Harry Rowohlt infocard not found! Check.
+Author Rubem Fonseca infocard not found! Check.
+Author Per Olov Enqvist infocard not found! Check.
+Author Katja Millay infocard not found! Check.
+Author Kaminsky infocard not found! Check.
+Author Alexander Sinowjew infocard not found! Check.
+Author Frank Cho infocard not found! Check.
+Author Barbara Streisand infocard not found! Check.
+Author Mortimer Adler infocard not found! Check.
+Author Ana Teresa Pereira infocard not found! Check.
+Author Rabih Alameddine infocard not found! Check.
+Author Hanna Jameson infocard not found! Check.
+Author Peter Ustinov infocard not found! Check.
+Author Dorothea Tanning infocard not found! Check.
+Author Elizabeth Johnson infocard not found! Check.
+Author David Bowman infocard not found! Check.
+Author Rodrigo Fresán infocard not found! Check.
+Author Maxim Biller infocard not found! Check.
+Author Agnon infocard not found! Check.
+Author Adam Johnson infocard not found! Check.
+Author Andrei Kurkov infocard not found! Check.
+Author Jörg Maurer infocard not found! Check.
+Author Guy Debord infocard not found! Check.
+Author Defne Suman infocard not found! Check.
+Author von der Vogelweide infocard not found! Check.
+Author Rice infocard not found! Check.
+Author Bab Balaban infocard not found! Check.
+Author Wynfried Schecke zu Gülitz infocard not found! Check.
+Author Eric Hansen infocard not found! Check.
+Author Gustav Kühne infocard not found! Check.
+Author Benedikt Wells infocard not found! Check.
+Author Friedrich Nietzsche infocard not found! Check.
+Author Andreas Neumeister infocard not found! Check.
+Author Barbara Noack infocard not found! Check.
+Author Curtis White infocard not found! Check.
+Author Bruno Latour infocard not found! Check.
+Author Susan Sontag infocard not found! Check.
+Author Franck Thilliez infocard not found! Check.
+Author Lana Lux infocard not found! Check.
+Author Rob Never infocard not found! Check.
+Author Anton Pavlovic Cehov infocard not found! Check.
+Author Bariccio infocard not found! Check.
+Author Richard Rodriguez infocard not found! Check.
+Author Sapphire infocard not found! Check.
+Author Markus Werner infocard not found! Check.
+Author Simone Beauvoir infocard not found! Check.
+Author Merle infocard not found! Check.
+Author Pedro Salinas infocard not found! Check.
+Author Deirdre Madden infocard not found! Check.
+Author Linus Volkmann infocard not found! Check.
+Author Erik Beckman infocard not found! Check.
+Author Adam Philips infocard not found! Check.
+Author Karamazow Brothers infocard not found! Check.
+Author Birgit Vanderbeke infocard not found! Check.
+Author Carol Oates infocard not found! Check.
+Author Aldo Nove infocard not found! Check.
+Author P.G. Wodehouse infocard not found! Check.
+Author Jim Carrol infocard not found! Check.
+Author George Santayana infocard not found! Check.
+Author Mike Tidwell infocard not found! Check.
+Author Alexander Ahndoril infocard not found! Check.
+Author jeff Talarigo infocard not found! Check.
+Author John Rawls infocard not found! Check.
+Author Ferdinad V infocard not found! Check.
+Author Michael Horbach infocard not found! Check.
+Author Tuna Bloom infocard not found! Check.
+Author Matthias Senkel infocard not found! Check.
+Author Zukav infocard not found! Check.
+Author George Gurdjieff infocard not found! Check.
+Author Frank Hubert infocard not found! Check.
+Author Louis Macneice infocard not found! Check.
+Author Josef Haslinger infocard not found! Check.
+Author Lauren Slater infocard not found! Check.
+Author Katja Lange-Müller infocard not found! Check.
+Author Simone Weil infocard not found! Check.
+Author Martin Heidegger infocard not found! Check.
+Author Mariana Leky infocard not found! Check.
+Author Luis Cernuda infocard not found! Check.
+Author Richard Hall infocard not found! Check.
+Author Terézia Mora infocard not found! Check.
+Author Charles Willeford infocard not found! Check.
+Author Gisela Elsner infocard not found! Check.
+Author Alejandro Chodorvsky infocard not found! Check.
+Author Michael Foucault infocard not found! Check.
+Author Jorge Eduardo Eielson infocard not found! Check.
+Author Liz Murray infocard not found! Check.
+Author Michael Crowley infocard not found! Check.
+Author Dieter Bohlen infocard not found! Check.
+Author Jane Teller infocard not found! Check.
+Author David Steindl-Rast infocard not found! Check.
+Author Tim Ingold infocard not found! Check.
+Author Amitava Ghosh infocard not found! Check.
+Author Theodor Draiser infocard not found! Check.
+Author Ernest Thompson Seton infocard not found! Check.
+Author Hanna Johnson infocard not found! Check.
+Author Robert Mason infocard not found! Check.
+Author Martinus infocard not found! Check.
+Author Andjei Sapkowski infocard not found! Check.
+Author Henry Cornelius Agrippa infocard not found! Check.
+Author Heidegger infocard not found! Check.
+Author Nikola Hahn infocard not found! Check.
+Author Alessandro Baricco infocard not found! Check.
+Author Paul Burston infocard not found! Check.
+Author Fritz Zorn infocard not found! Check.
+Author Horst Wildenbrock infocard not found! Check.
+Author Karl Kraus infocard not found! Check.
+Author Daniela Krien infocard not found! Check.
+Author Tim Dorsey infocard not found! Check.
+Author Shalev infocard not found! Check.
+Author Agustina Bessa Luis infocard not found! Check.
+Author Leif Panduro infocard not found! Check.
+Author Rousseau infocard not found! Check.
+Author Peter Kennedy Toole infocard not found! Check.
+Author Max Stirner infocard not found! Check.
+Author Nelson Blake infocard not found! Check.
+Author Timothy Lyri infocard not found! Check.
+Author David Graeber infocard not found! Check.
+Author Sally Spencer infocard not found! Check.
+Author Thomas Sowell infocard not found! Check.
+Author Esther Kinsky infocard not found! Check.
+Author Frantz Fanon infocard not found! Check.
+Author Dan Beachy-Quick infocard not found! Check.
+Author Eric Kraft infocard not found! Check.
+Author Everet True infocard not found! Check.
+Author Adalet Agaoglu infocard not found! Check.
+Author Juan Gelman infocard not found! Check.
+Author Macedonio Fernández infocard not found! Check.
+Author Andre Aicman infocard not found! Check.
+Author Charles De Coster infocard not found! Check.
+Author Kurt Cobain infocard not found! Check.
+Author Zinn infocard not found! Check.
+Author Manuel Rivas infocard not found! Check.
+Author Julie Doucet infocard not found! Check.
+Author M.A.C. Farrant infocard not found! Check.
+Author Jean-Philippe Jaworski infocard not found! Check.
+Author Paul Nizon infocard not found! Check.
+Author Horacio Salas infocard not found! Check.
+Author Gary Russell infocard not found! Check.
+Author La Carre infocard not found! Check.
+Author Mikael Torfason infocard not found! Check.
+Author Joachim Meyerhoff infocard not found! Check.
+Author Josh Lanyon infocard not found! Check.
+Author Jonathan Raban infocard not found! Check.
+Author Kathy Riechs infocard not found! Check.
+Author Michael Roach infocard not found! Check.
+Author Yoshiki Tanaka infocard not found! Check.
+Author Rohinton Minstry infocard not found! Check.
+Author Philip Hensher infocard not found! Check.
+Author Ezra Pound infocard not found! Check.
+Author Albert Drach infocard not found! Check.
+Author Eveline Hasler infocard not found! Check.
+Author Bill Aitken infocard not found! Check.
+Author Max Hastings infocard not found! Check.
+Author Roland Barthes infocard not found! Check.
+Author Starhawk infocard not found! Check.
+Author Max Weber infocard not found! Check.
+Author Özdemir Asaf infocard not found! Check.
+Author Ivan Lessa infocard not found! Check.
+Author Matt Ruff infocard not found! Check.
+Author Kehlmann infocard not found! Check.
+Author Norbert Zähringer infocard not found! Check.
+Author Manuel Baixauli infocard not found! Check.
+Author Alfred Lichtenstein infocard not found! Check.
+Author Anna Enquist infocard not found! Check.
+Author Sebastián De Covarrubias infocard not found! Check.
+Author Dimitri Verhulst infocard not found! Check.
+Author Frank Goosen infocard not found! Check.
+Author Hugo Claus', "O'brien", 'Theodor W. Adorno infocard not found! Check.
+Author Toon Tellegen infocard not found! Check.
+Author Martyn Bedford infocard not found! Check.
+Author Tony Horowitz infocard not found! Check.
+Author Danielle Bennet infocard not found! Check.
+Author Jonas Gardell infocard not found! Check.
+Author Boris Cyrulnik infocard not found! Check.
+Author Julia Preston infocard not found! Check.
+Author Dietmar Wischmeyer infocard not found! Check.
+Author Balzac De Honore', "Roddy O'Doyle", 'Jack Kerouac infocard not found! Check.
+Author Peter Kurzeck infocard not found! Check.
+Author Ian Monk infocard not found! Check.
+Author Ulla Trenter infocard not found! Check.
+Author Bill Bryon infocard not found! Check.
+Author Charlotte Gann infocard not found! Check.
+Author Jan Kjærstad infocard not found! Check.
+Author Wieland Freund infocard not found! Check.
+Author Ernest K Gann infocard not found! Check.
+Author Sabato infocard not found! Check.
+Author Andrea Dworkin infocard not found! Check.
+Author Dunsany infocard not found! Check.
+Author Thorsten Dewi infocard not found! Check.
+Author Jürgen Ploog infocard not found! Check.
+Author Martin Suter infocard not found! Check.
+Author William Dyer infocard not found! Check.
+Author Oscar Van Den Boogaard infocard not found! Check.
+Author William Burrows infocard not found! Check.
+Author Frank Tallis infocard not found! Check.
+Author Russell infocard not found! Check.
+Author Deborah Feldman infocard not found! Check.
+Author Marcelo Figueras infocard not found! Check.
+Author Torberg infocard not found! Check.
+Author Bridget Collins infocard not found! Check.
+Author Nelleke Noordervliet infocard not found! Check.
+Author Rita Ann Higgins infocard not found! Check.
+Author Ted Simon infocard not found! Check.
+Author Karl Marlantes infocard not found! Check.
+Author Christiane F. infocard not found! Check.
+Author Emily Ruskovich infocard not found! Check.
+Author Juan Marsé infocard not found! Check.
+Author Les Claypool infocard not found! Check.
+Author Karl Riha infocard not found! Check.
+Author Hilda Hilst infocard not found! Check.
+Author Marie Pohl infocard not found! Check.
+Author Radek Knapp infocard not found! Check.
+Author Charlotte Bacon infocard not found! Check.
+Author Eric Emanuel Schmitt infocard not found! Check.
+Author Irwin Yalom infocard not found! Check.
+Author Chuck infocard not found! Check.
+Author Tenesse Williams infocard not found! Check.
+Author Jonathan Morris infocard not found! Check.
+Author Canetti infocard not found! Check.
+Author Leopoldo Maria Panero infocard not found! Check.
+Author Vislawa Szymborska infocard not found! Check.
+Author Brusselmans infocard not found! Check.
+Author Michael Martone infocard not found! Check.
+Author Hermans infocard not found! Check.
+Author W.H. Auden infocard not found! Check.
+Author Peter Sloterdijk infocard not found! Check.
+Author Markus Barth infocard not found! Check.
+Author James R. Hannibal infocard not found! Check.
+Author Caio Fernando Abreu infocard not found! Check.
+Author Salvadore Dali infocard not found! Check.
+Author Hans-Eckhardt Wenzel infocard not found! Check.
+Author Norbert Gstrein infocard not found! Check.
+Author Copland infocard not found! Check.
+Author Allen infocard not found! Check.
+Author W. C. Heinz infocard not found! Check.
+Author De Bernieres infocard not found! Check.
+Author James Rubart infocard not found! Check.
+Author Francois Pennac infocard not found! Check.
+Author Greg Rucka infocard not found! Check.
+Author Jorge Bucay infocard not found! Check.
+Author Steffi Von Wolff infocard not found! Check.
+Author Jelinek infocard not found! Check.
+Author Maurice Blanchot infocard not found! Check.
+Author Walter Benjamin infocard not found! Check.
+Author Mario Vargas Llosa infocard not found! Check.
+Author Emil Cioran infocard not found! Check.
+Author Irwin Welsh infocard not found! Check.
+Author Benn infocard not found! Check.
+Author Vigdis Grimsdottir infocard not found! Check.
+Author Alexander Dugin infocard not found! Check.
+Author Jean Nouvel infocard not found! Check.
+Author Toole infocard not found! Check.
+Author Bruce Fink infocard not found! Check.
+Author Amis infocard not found! Check.
+Author Thomas Hobbes infocard not found! Check.
+Author Feuchtwanger infocard not found! Check.
+Author Tiziano Terzani infocard not found! Check.
+Author Georg haderer infocard not found! Check.
+Author Judith Schalansky infocard not found! Check.
+Author Walter Kempowski infocard not found! Check.
+Author Jerzy Kozinski infocard not found! Check.
+Author George Sand infocard not found! Check.
+Author Kjaerstad infocard not found! Check.
+Author Euclides da cunha infocard not found! Check.
+Author Damian Murphy infocard not found! Check.
+Author William Dalrymple infocard not found! Check.
+Author Susanna Tamaro infocard not found! Check.
+Author Phil Reed infocard not found! Check.
+Author Dieter Forte infocard not found! Check.
+Author Stéphane Bourguignon infocard not found! Check.
+Author Stefan Slupetzky infocard not found! Check.
+Author Antal Szerb infocard not found! Check.
+Author Wolfgang Büscher infocard not found! Check.
+Author Jessica Durlacher infocard not found! Check.
+Author Sarah Chavez infocard not found! Check.
+Author Fred Chappell infocard not found! Check.
+Author Rainis', "Alessandro D'Avenia", 'Robert Giraldi infocard not found! Check.
+Author James Schuyler infocard not found! Check.
+Author Luis sepulveda infocard not found! Check.
+Author Vincent Ravalec infocard not found! Check.
+Author Austin Wright', "Flann O'Brian", 'Laurie Lee infocard not found! Check.
+Author Henry Thoreau infocard not found! Check.
+Author William Shakespeare infocard not found! Check.
+Author Ulrike Draesner infocard not found! Check.
+Author Spengler infocard not found! Check.
+Author Francis Parker Yockey infocard not found! Check.
+Author Muriel Barbery infocard not found! Check.
+Author Huysman infocard not found! Check.
+Author Kurt Schwitters infocard not found! Check.
+Author Else Buschheuer', "Tim O'Brien", 'Norfolk infocard not found! Check.
+Author Jarett Kobek infocard not found! Check.
+Author Alvaro Pombo infocard not found! Check.
+Author Daudet infocard not found! Check.
+Author Fanny Flagg infocard not found! Check.
+Author F.W.Bernstein infocard not found! Check.
+Author Sandor Marais infocard not found! Check.
+Author Robin Pilcher infocard not found! Check.
+Author Dimitré Dinev infocard not found! Check.
+Author Mira Magen infocard not found! Check.
+Author Antony De Saint Exupery infocard not found! Check.
+Author Irvin D. Yalom infocard not found! Check.
+Author William Ryan infocard not found! Check.
+Author Hanns Henny Jahn infocard not found! Check.
+Author Dinty W.Moore infocard not found! Check.
+Author Jean-Patrick Manchette infocard not found! Check.
+Author Guy De La Valdene infocard not found! Check.
+Author Sarban infocard not found! Check.
+Author Steven Fry infocard not found! Check.
+Author Lorenz infocard not found! Check.
+Author Maria Gabriela Llansol infocard not found! Check.
+Author Borgues infocard not found! Check.
+Author Jan Off infocard not found! Check.
+Author Timothy Leary infocard not found! Check.
+Author Cabbel infocard not found! Check.
+Author Fitzgerald infocard not found! Check.
+Author Enrique Vila-Matas infocard not found! Check.
+Author Braun infocard not found! Check.
+Author Mario Bellatin infocard not found! Check.
+Author Vergilio Ferreira infocard not found! Check.
+Author Curzio Malaparte infocard not found! Check.
+Author Matthias Sachau infocard not found! Check.
+Author Berte Bratt infocard not found! Check.
+Author Weiss & Hickman infocard not found! Check.
+Author Pulp Fiction infocard not found! Check.
+Author Milan Kundra infocard not found! Check.
+Author Greg Mortenson infocard not found! Check.
+Author J. Andrew Schrecker infocard not found! Check.
+Author Dietmar Dath infocard not found! Check.
+Author Eeva Kilpi infocard not found! Check.
+Author Gerhard Roth infocard not found! Check.
+Author Jerry Toner infocard not found! Check.
+Author Nicole Brossard infocard not found! Check.
+Author Pablo Tusset infocard not found! Check.
+Author Lady Winston infocard not found! Check.
+Author Cora Sandel infocard not found! Check.
+Author Jaap Scholten infocard not found! Check.
+Author Gibran Khalil Gibran infocard not found! Check.
+Author Markus Almond infocard not found! Check.
+Author Peter Kropotkin infocard not found! Check.
+Author Julio Llamazares infocard not found! Check.
+Author Wolfgang Köppen infocard not found! Check.
+Author Georg Zauner infocard not found! Check.
+Author Virgilio Piñera infocard not found! Check.
+Author Keith Waterhouse infocard not found! Check.
+Author Berto Giuseppe infocard not found! Check.
+Author Tessa De Loo infocard not found! Check.
+Author Karl-Heinz Tuschel infocard not found! Check.
+Author Gabriela Jaskulla infocard not found! Check.
+Author Jack Karouace infocard not found! Check.
+Author Mina Loy infocard not found! Check.
+Author Spalding Gray infocard not found! Check.
+Author Tommie Bayer infocard not found! Check.
+Author Thomas Coraghessan Boyle infocard not found! Check.
+Author Günter Saalmann infocard not found! Check.
+Author Peter Henisch infocard not found! Check.
+Author Robert Moss infocard not found! Check.
+Author Marcia Rose infocard not found! Check.
+Author Josie Lloyd infocard not found! Check.
+Author John Wyndham infocard not found! Check.
+Author Lincoln infocard not found! Check.
+Author Charles Sanders Pierce infocard not found! Check.
+Author Aleksander Tisma infocard not found! Check.
+Author René Char', "Patrick O'Brian", 'Edgar Rice Borroughs infocard not found! Check.
+Author Louis Armand infocard not found! Check.
+Author Sorokin infocard not found! Check.
+Author Robbins infocard not found! Check.
+Author Antero Alli infocard not found! Check.
+Author Thomas Gsella infocard not found! Check.
+Author Emma Goldman infocard not found! Check.
+Author Thievery Corporation infocard not found! Check.
+Author Perkins Gilmore infocard not found! Check.
+Author Edmond Jabes infocard not found! Check.
+Author Sterne infocard not found! Check.
+Author Joke hermsen infocard not found! Check.
+Author Barba Kingsolver infocard not found! Check.
+Author Willem Elsschot infocard not found! Check.
+Author Silvina Ocampo infocard not found! Check.
+Author Alexander Theroux infocard not found! Check.
+Author Thomas Benhard infocard not found! Check.
+Author Stan Hey infocard not found! Check.
+Author David Vann infocard not found! Check.
+Author Barber Van Der Pol infocard not found! Check.
+Author Joanna Cannon infocard not found! Check.
+Author A.F.Th. Van Der Heijden infocard not found! Check.
+Author Fernando Aramburu infocard not found! Check.
+Author Hosseini Khaled infocard not found! Check.
+Author Eckhard Henscheid infocard not found! Check.
+Author Marshall Browne infocard not found! Check.
+Author Daniel Lewis infocard not found! Check.
+Author Michael Zoch infocard not found! Check.
+Author Tim Robbins infocard not found! Check.
+Author Claudie Gallay', "Maarten'T Hart", 'Buell Cobb infocard not found! Check.
+Author William Heinesen infocard not found! Check.
+Author Christina Brudereck infocard not found! Check.
+Author Henri Bosco infocard not found! Check.
+Author Anne Beattie infocard not found! Check.
+Author Shalom Auslander infocard not found! Check.
+Author Djian infocard not found! Check.
+Author Johathan Bach infocard not found! Check.
+Author Mordecai Richler infocard not found! Check.
+Author Helge Sobik infocard not found! Check.
+Author Thomas Stangl infocard not found! Check.
+Author Chris Hedges infocard not found! Check.
+Author Albert Camus infocard not found! Check.
+Author Sherman Nuland infocard not found! Check.
+Author Tesla infocard not found! Check.
+Author Robert Kaplan infocard not found! Check.
+Author Graf infocard not found! Check.
+Author Frank Witzel infocard not found! Check.
+Author W. B. Yeats infocard not found! Check.
+Author Isabella Santacroce infocard not found! Check.
+Author Björn Larsson infocard not found! Check.
+Author Almudena Grande infocard not found! Check.
+Author Molly Gloss infocard not found! Check.
+Author Polina Daschkowa infocard not found! Check.
+Author Francesc Miralles infocard not found! Check.
+Author S.J.Rozan infocard not found! Check.
+Author Paul Klee infocard not found! Check.
+Author Friedrich Torberg', "Flannery O'Connor", 'Lawrence Durrell infocard not found! Check.
+Author R.A. Hakok infocard not found! Check.
+Author Banana Yamamoto infocard not found! Check.
+Author Paul Durcan infocard not found! Check.
+Author Pierre Guyotat infocard not found! Check.
+Author Alain de Benoist infocard not found! Check.
+Author Friedrich Huch infocard not found! Check.
+Author Funny Van Dannen infocard not found! Check.
+Author Charlie Hustson infocard not found! Check.
+Author Thom Jones infocard not found! Check.
+Author Banu Avar infocard not found! Check.
+Author Rocko Schamoni infocard not found! Check.
+Author Yanick Murphy infocard not found! Check.
+Author Adolf Muschg infocard not found! Check.
+Author Bjarne Reuter infocard not found! Check.
+Author Gregor von Rezzori infocard not found! Check.
+Author Elke Naters infocard not found! Check.
+Author Peter Hitchens infocard not found! Check.
+Author Ulrich Holbein infocard not found! Check.
+Author Ror Wolf infocard not found! Check.
+Author Greg Dening infocard not found! Check.
+Author Tiziana Terranova infocard not found! Check.
+Author Alexander Trocchi infocard not found! Check.
+Author Lloyd Jones infocard not found! Check.
+Author Anthony De Mello infocard not found! Check.
+Author Dina Rubina infocard not found! Check.
+Author Friedrich Glauser infocard not found! Check.
+Author Alain Mabanckou infocard not found! Check.
+Author Frederick Manfred infocard not found! Check.
+Author Urs Augsburger infocard not found! Check.
+Author Hanns-Josef Ortheil infocard not found! Check.
+Author Wolfram Fleischhauer infocard not found! Check.
+Author Gerald Murnane infocard not found! Check.
+Author Cesar Aira', "Eugene O'Neil", 'Marsha Norman infocard not found! Check.
+Author Antonin Artaud infocard not found! Check.
+Author Pu La Deshpande infocard not found! Check.
+Author Gregory Orr infocard not found! Check.
+Author Vikram Chandra infocard not found! Check.
+Author Michael Palmer infocard not found! Check.
+Author Kathleen Fraser infocard not found! Check.
+Author David Riesman infocard not found! Check.
+Author Mendoza infocard not found! Check.
+Author Norah Lange infocard not found! Check.
+Author Erasmus infocard not found! Check.
+Author Tyler infocard not found! Check.
+Author William Kotzwinkle infocard not found! Check.
+Author Conor Grennan infocard not found! Check.
+Author Raoul Tranchirer infocard not found! Check.
+Author Ludwig Klages infocard not found! Check.
+Author Michael Kleeberg infocard not found! Check.
+Author Marion Poschmann infocard not found! Check.
+Author Jo Conrad infocard not found! Check.
+Author Jorge Molist', "Maarten t'Hart", 'Paul Keitel infocard not found! Check.
+Author Alexander Barrico infocard not found! Check.
+Author Viktor Frankl infocard not found! Check.
+Author McCarthy infocard not found! Check.
+Author Denis Diderot infocard not found! Check.
+Author Stewart Home infocard not found! Check.
+Author John Adjvide Lindqvist infocard not found! Check.
+Author Clare Best infocard not found! Check.
+Author A.F.Th. van der Heijden infocard not found! Check.
+Author G.W. Sebald infocard not found! Check.
+Author Rafael Chirbes infocard not found! Check.
+Author Allan Kardec infocard not found! Check.
+Author Mauro Saracino infocard not found! Check.
+Author Jan Peter Bremer infocard not found! Check.
+Author William Matthews infocard not found! Check.
+Author Daniel Sada infocard not found! Check.
+Author Jose Emilio Pacheco infocard not found! Check.
+Author Klaus Ferentschik infocard not found! Check.
+Author John Kolchak infocard not found! Check.
+Author Bichsel infocard not found! Check.
+Author Hannelore Valencak infocard not found! Check.
+Author About A Boy infocard not found! Check.
+Author Roy Jacobsen infocard not found! Check.
+Author Erika mann infocard not found! Check.
+Author Carrol infocard not found! Check.
+Author Myself infocard not found! Check.
+Author Amily Brownt infocard not found! Check.
+Author Josã© Pablo Feinmann infocard not found! Check.
+Author Urulsa Le Guinn infocard not found! Check.
+Author Keri Smith infocard not found! Check.
+Author Charles Bukowski infocard not found! Check.
+Author Alejandra Costamagna infocard not found! Check.
+Author Fowles infocard not found! Check.
+Author Boris Hurtta infocard not found! Check.
+Author Stuart turton infocard not found! Check.
+Author Karine Tuil infocard not found! Check.
+Author Vasily Rozanov infocard not found! Check.
+Author Lucy Fricke infocard not found! Check.
+Author Jan De Meyer infocard not found! Check.
+Author Christoph Martin Wieland infocard not found! Check.
+Author John Hawkes infocard not found! Check.
+Author Ioan Slavici infocard not found! Check.
+Author Gerhard Jäger infocard not found! Check.
+Author Maria Nurowska infocard not found! Check.
+Author Brösel infocard not found! Check.
+Author Pevelin infocard not found! Check.
+Author Mailer infocard not found! Check.
+Author Edward Said infocard not found! Check.
+Author Milo Yiannopoulos infocard not found! Check.
+Author Arthur Cravan infocard not found! Check.
+Author Hebe Uhart infocard not found! Check.
+Author Wolf Serno infocard not found! Check.
+Author George V Higgins infocard not found! Check.
+Author Terence Sellers infocard not found! Check.
+Author Jürgen Kehrer infocard not found! Check.
+Author Alice Schwarzer infocard not found! Check.
+Author Bernard Weber infocard not found! Check.
+Author Gary Krist infocard not found! Check.
+Author Lajos Zilahy infocard not found! Check.
+Author Carmine Abate infocard not found! Check.
+Author Frisch infocard not found! Check.
+Author Maxence Fermine infocard not found! Check.
+Author Bill Drummond infocard not found! Check.
+Author Einar Schleef infocard not found! Check.
+Author Charles Manson infocard not found! Check.
+Author Albert Goldbarth infocard not found! Check.
+Author Jeremy Bentham infocard not found! Check.
+Author Mathias Enard infocard not found! Check.
+Author Donne infocard not found! Check.
+Author Toshikazu Kawaguchi infocard not found! Check.
+Author Siddons infocard not found! Check.
+Author Hildegunst Von Mythenmetz infocard not found! Check.
+Author Benjamin Von Stuckrad-Barre infocard not found! Check.
+Author Simon Reeve infocard not found! Check.
+Author Søren Ulrik Thomsen infocard not found! Check.
+Author Kennedy Toole infocard not found! Check.
+Author Tellegen infocard not found! Check.
+Author Janwillem Van De Wetering infocard not found! Check.
+Author Micky Remann infocard not found! Check.
+Author Giuseppe Tomasi Di Lampedusa infocard not found! Check.
+Author Junger infocard not found! Check.
+Author Swift infocard not found! Check.
+Author C.S. Mahrendorff infocard not found! Check.
+Author Norman Fischer infocard not found! Check.
+Author E. F. Schumacher infocard not found! Check.
+Author Neil Astley infocard not found! Check.
+Author Josh Bazell infocard not found! Check.
+Author Heinz G. Konsalik infocard not found! Check.
+Author Alice Faye Duncan infocard not found! Check.
+Author Bachelard infocard not found! Check.
+Author Lene Kaaberbøl infocard not found! Check.
+Author Heinrich Mann infocard not found! Check.
+Author Aleksandr Soljenitsyn infocard not found! Check.
+Author Daniel Baldacci infocard not found! Check.
+Author Otto Rank infocard not found! Check.
+Author Lily Prior infocard not found! Check.
+Author Anais Nin infocard not found! Check.
+Author Javier Cercas infocard not found! Check.
+Author Andrés Neuman infocard not found! Check.
+Author Austin infocard not found! Check.
+Author Doris Kloster infocard not found! Check.
+Author JosÃ© Pablo Feinmann infocard not found! Check.
+Author Patricia Smith infocard not found! Check.
+Author Juan Filloy infocard not found! Check.
+Author Ivan Illich infocard not found! Check.
+Author Alexander Maksik infocard not found! Check.
+Author Jennings infocard not found! Check.
+Author Larry Gonick infocard not found! Check.
+Author St Exupery infocard not found! Check.
+Author Fritz Steuben infocard not found! Check.
+Author Steinfeld infocard not found! Check.
+Author Christiane F infocard not found! Check.
+Author Art Buchwald infocard not found! Check.
+Author Volker Braun infocard not found! Check.
+Author Golding infocard not found! Check.
+Author Benedetti infocard not found! Check.
+Author Bodo Schäfer infocard not found! Check.
+Author Rupert Thompson infocard not found! Check.
+Author David Huddle infocard not found! Check.
+Author Marcela Serrano infocard not found! Check.
+Author Sue Townshend infocard not found! Check.
+Author Sven Lager infocard not found! Check.
+Author Johann Nestroy infocard not found! Check.
+Author Hédi Kaddour infocard not found! Check.
+Author Heinz von Foerster infocard not found! Check.
+Author Ross King infocard not found! Check.
+Author Abilio Estevez infocard not found! Check.
+Author Knausgaard infocard not found! Check.
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author August Stramm ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Daniel Galera ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 18, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Author Oswald de Andrade ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 104, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 47, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Taichi Yamada ratings not found! Check.
+Author Michael David Lukas ratings not found! Check.
+Author Lori Lansens ratings not found! Check.
+Author Jeff Strand ratings not found! Check.
+Author Melissa Lucashenko ratings not found! Check.
+Author Daria Bignardi ratings not found! Check.
+Author Rodrigo Hasbun ratings not found! Check.
+Author David Day ratings not found! Check.
+Author John Edward Williams ratings not found! Check.
+Author Antoine Laurain ratings not found! Check.
+Author Wolfgang Bauer ratings not found! Check.
+Author Antonio Orejudo ratings not found! Check.
+Author Joann Fluke ratings not found! Check.
+Author Ewald Arenz ratings not found! Check.
+Author Antje Ravic Strubel ratings not found! Check.
+Author Usher ratings not found! Check.
+Author Paulo Coelho ratings not found! Check.
+Author Niall Williams ratings not found! Check.
+Author Catherine Banner ratings not found! Check.
+Author Column Mccann ratings not found! Check.
+Author Howard Jones ratings not found! Check.
+Author Rory Power ratings not found! Check.
+Author Claudia keelan ratings not found! Check.
+Author Genevieve Valentine ratings not found! Check.
+Author Joseph Monninger ratings not found! Check.
+Author Steve Tesich ratings not found! Check.
+Author Kevin Sampson ratings not found! Check.
+Author James Tate ratings not found! Check.
+Author Dune ratings not found! Check.
+Author Nickolas Butler ratings not found! Check.
+Author Kyle Mills ratings not found! Check.
+Author Walt Disney ratings not found! Check.
+Author Dave Gray ratings not found! Check.
+Author Josh Sundquist ratings not found! Check.
+Author Julie Buxbaum ratings not found! Check.
+Author Francesca Melandri ratings not found! Check.
+Author Tom Spanbauer ratings not found! Check.
+Author Felice Picano ratings not found! Check.
+Author Simon Yates ratings not found! Check.
+Author Zoe Jenny ratings not found! Check.
+Author Amy Gerstler ratings not found! Check.
+Author Jorge Franco ratings not found! Check.
+Author Nina allan ratings not found! Check.
+Author Cristovão Tezza ratings not found! Check.
+Author Marc-Uwe Kling ratings not found! Check.
+Author Michael Cunningham ratings not found! Check.
+Author Dmitry Glukhovsky ratings not found! Check.
+Author Marçal Aquino ratings not found! Check.
+Author R. Lee Smith ratings not found! Check.
+Author marianne Wiggins ratings not found! Check.
+Author Dr Johnson ratings not found! Check.
+Author Oliver Bottini ratings not found! Check.
+Author Tom Carson ratings not found! Check.
+Author Isabel Alende ratings not found! Check.
+Author Eli Amir ratings not found! Check.
+Author Mark Slouka ratings not found! Check.
+Author Romana Petri ratings not found! Check.
+Author Tom Lanoye ratings not found! Check.
+Author Brian Catling ratings not found! Check.
+Author Wolfram Von Eschenbach ratings not found! Check.
+Author Suki Kim ratings not found! Check.
+Author Travis ratings not found! Check.
+Author Javier Ruescas ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingValue"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Author E M Forster ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Author Judith Hermann ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'find_element_by_tag_name'
+Author Luan Goldie ratings not found! Check.
+Author Isabel Alende ratings not found! Check.
+Author Shalom Auslander ratings not found! Check.
+Author Keri Smith ratings not found! Check.
+Author Daniel Alarcon ratings not found! Check.
+Author Hari Kunzru ratings not found! Check.
+Author Sarah bakewell ratings not found! Check.
+Author İhsan Oktay Anar ratings not found! Check.
+Author Max Bronski ratings not found! Check.
+Author Hanna Johnson ratings not found! Check.
+Author Jon Evans ratings not found! Check.
+Author Alexander Mccall-Smith ratings not found! Check.
+Author Juvenal ratings not found! Check.
+Author John Kolchak ratings not found! Check.
+Author Donn Cortez ratings not found! Check.
+Author Claudia Rankine ratings not found! Check.
+Author Rian Malan ratings not found! Check.
+Author Ruth Ozeki ratings not found! Check.
+Author Lloyd Jones ratings not found! Check.
+Author Julianna Baggott ratings not found! Check.
+Author Drew Karpyshyn ratings not found! Check.
+Author Marliese Arold ratings not found! Check.
+Author Tim Parks ratings not found! Check.
+Author Wilton Barnhardt ratings not found! Check.
+Author Wolfram Von Eschenbach ratings not found! Check.
+Author David Graeber ratings not found! Check.
+Author Scott Heim ratings not found! Check.
+Author Luo Guanzhong ratings not found! Check.
+Author Inga Muscio ratings not found! Check.
+Author James Rubart ratings not found! Check.
+Author Melissa Lucashenko ratings not found! Check.
+Author Albert Moers ratings not found! Check.
+Author Elliot ratings not found! Check.
+Author Steve Almond ratings not found! Check.
+Author Norbert Gstrein ratings not found! Check.
+Author Richard Russo ratings not found! Check.
+Author Diego Trelles Paz ratings not found! Check.
+Author Joseph Monninger ratings not found! Check.
+Author Pinckney Benedict ratings not found! Check.
+Author Louis Bayard ratings not found! Check.
+Author Jack D. Schwager ratings not found! Check.
+Author Fonda Lee ratings not found! Check.
+Author Lydia Lunch ratings not found! Check.
+Author Hédi Kaddour ratings not found! Check.
+Author Carrol ratings not found! Check.
+Author Robert Duncan ratings not found! Check.
+Author Curtis White ratings not found! Check.
+Author Emma Newman ratings not found! Check.
+Author Lev Manovich ratings not found! Check.
+Author David Constantine ratings not found! Check.
+Author Steven Fry ratings not found! Check.
+Author Zweig ratings not found! Check.
+Author Joshua Beckman ratings not found! Check.
+Author John Lansdale ratings not found! Check.
+Author Daniel Lewis ratings not found! Check.
+Author Charles Allen ratings not found! Check.
+Author Tom Carson ratings not found! Check.
+Author Eça de Queiroz ratings not found! Check.
+Author Francesc Miralles ratings not found! Check.
+Author Usher ratings not found! Check.
+Author Molly Gloss ratings not found! Check.
+Author Joanna Cannon ratings not found! Check.
+Author Simon Sebag Montefiore ratings not found! Check.
+Author Tim Waggoner ratings not found! Check.
+Author Michael Mcgriff ratings not found! Check.
+Author David Edwards ratings not found! Check.
+Author Regina Scheer ratings not found! Check.
+Author Tim Ingold ratings not found! Check.
+Author Kai Meyer ratings not found! Check.
+Author Ben Marcus ratings not found! Check.
+Author Javier Ruescas ratings not found! Check.
+Author Carl Hiaason ratings not found! Check.
+Author Venedikt Jerofejev ratings not found! Check.
+Author Gordon ratings not found! Check.
+Author Susan Witting Albert ratings not found! Check.
+Author Safran Foer ratings not found! Check.
+Author David Bezmozgis ratings not found! Check.
+Author Tony Tulathimutte ratings not found! Check.
+Author Benedikt Wells ratings not found! Check.
+Author Justin Richards ratings not found! Check.
+Author Andrea Long Chu ratings not found! Check.
+Author Kate Jacoby ratings not found! Check.
+Author Sophocles ratings not found! Check.
+Author Morgan Rice ratings not found! Check.
+Author Martin Myers ratings not found! Check.
+Author Buddha ratings not found! Check.
+Author Durga Chew-Bose ratings not found! Check.
+Author Cole Alpaugh ratings not found! Check.
+Author Junger ratings not found! Check.
+Author Philip Hensher ratings not found! Check.
+Author H.D. ratings not found! Check.
+Author Stephen Frey ratings not found! Check.
+Author Christopher Moore ratings not found! Check.
+Author Mark Pryor ratings not found! Check.
+Author Antje Ravic Strubel ratings not found! Check.
+Author Marçal Aquino ratings not found! Check.
+Author Hilary Thayer Hamann ratings not found! Check.
+Author Stuart turton ratings not found! Check.
+Author Tony Horowitz ratings not found! Check.
+Author Santiago Gamboa ratings not found! Check.
+Author Jean-Philippe Jaworski ratings not found! Check.
+Author Rebecca Ryman ratings not found! Check.
+Author Tino Hanekamp ratings not found! Check.
+Author Mavis Cheek ratings not found! Check.
+Author Harry Bingham ratings not found! Check.
+Author Ford ratings not found! Check.
+Author Vikas Swarup ratings not found! Check.
+Author B. Traven ratings not found! Check.
+Author Mark Danielewski ratings not found! Check.
+Author Amy Tan ratings not found! Check.
+Author Assembly ratings not found! Check.
+Author Louis Wood ratings not found! Check.
+Author Judith Taschler ratings not found! Check.
+Author Peter Illis ratings not found! Check.
+Author Andrea Hirata ratings not found! Check.
+Author Giovanni Boccaccio ratings not found! Check.
+Author Foer ratings not found! Check.
+Author Antonio Orejudo ratings not found! Check.
+Author Jonathan Coe ratings not found! Check.
+Author Ferdinand Von Schirach ratings not found! Check.
+Author Adam Davies ratings not found! Check.
+Author Neal Stephenson ratings not found! Check.
+Author Chuck Dixon ratings not found! Check.
+Author Andrea K Host ratings not found! Check.
+Author James R. Hannibal ratings not found! Check.
+Author Mark Slouka ratings not found! Check.
+Author Julian Baggini ratings not found! Check.
+Author John Irving ratings not found! Check.
+Author Bill Knott ratings not found! Check.
+Author Thomas Raab ratings not found! Check.
+Author Majgull Axelsson ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'find_element_by_tag_name'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingValue"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'WebElement' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'NoneType' object has no attribute 'split'
+Author Terry Pratchett ratings not found! Check.
+Author Luan Goldie ratings not found! Check.
+Author Isabel Alende ratings not found! Check.
+Author Shalom Auslander ratings not found! Check.
+Author Keri Smith ratings not found! Check.
+Author Daniel Alarcon ratings not found! Check.
+Author Hari Kunzru ratings not found! Check.
+Author Sarah bakewell ratings not found! Check.
+Author İhsan Oktay Anar ratings not found! Check.
+Author Max Bronski ratings not found! Check.
+Author Hanna Johnson ratings not found! Check.
+Author Jon Evans ratings not found! Check.
+Author Alexander Mccall-Smith ratings not found! Check.
+Author Juvenal ratings not found! Check.
+Author John Kolchak ratings not found! Check.
+Author Donn Cortez ratings not found! Check.
+Author Claudia Rankine ratings not found! Check.
+Author Rian Malan ratings not found! Check.
+Author Ruth Ozeki ratings not found! Check.
+Author Lloyd Jones ratings not found! Check.
+Author Julianna Baggott ratings not found! Check.
+Author Drew Karpyshyn ratings not found! Check.
+Author Marliese Arold ratings not found! Check.
+Author Tim Parks ratings not found! Check.
+Author Wilton Barnhardt ratings not found! Check.
+Author Wolfram Von Eschenbach ratings not found! Check.
+Author David Graeber ratings not found! Check.
+Author Scott Heim ratings not found! Check.
+Author Luo Guanzhong ratings not found! Check.
+Author Inga Muscio ratings not found! Check.
+Author James Rubart ratings not found! Check.
+Author Melissa Lucashenko ratings not found! Check.
+Author Albert Moers ratings not found! Check.
+Author Elliot ratings not found! Check.
+Author Steve Almond ratings not found! Check.
+Author Norbert Gstrein ratings not found! Check.
+Author Richard Russo ratings not found! Check.
+Author Diego Trelles Paz ratings not found! Check.
+Author Joseph Monninger ratings not found! Check.
+Author Pinckney Benedict ratings not found! Check.
+Author Louis Bayard ratings not found! Check.
+Author Jack D. Schwager ratings not found! Check.
+Author Fonda Lee ratings not found! Check.
+Author Lydia Lunch ratings not found! Check.
+Author Hédi Kaddour ratings not found! Check.
+Author Robert Duncan ratings not found! Check.
+Author Curtis White ratings not found! Check.
+Author Emma Newman ratings not found! Check.
+Author Lev Manovich ratings not found! Check.
+Author David Constantine ratings not found! Check.
+Author Steven Fry ratings not found! Check.
+Author Joshua Beckman ratings not found! Check.
+Author John Lansdale ratings not found! Check.
+Author Daniel Lewis ratings not found! Check.
+Author Charles Allen ratings not found! Check.
+Author Tom Carson ratings not found! Check.
+Author Francesc Miralles ratings not found! Check.
+Author Usher ratings not found! Check.
+Author Molly Gloss ratings not found! Check.
+Author Joanna Cannon ratings not found! Check.
+Author Simon Sebag Montefiore ratings not found! Check.
+Author Tim Waggoner ratings not found! Check.
+Author Michael Mcgriff ratings not found! Check.
+Author David Edwards ratings not found! Check.
+Author Regina Scheer ratings not found! Check.
+Author Tim Ingold ratings not found! Check.
+Author Kai Meyer ratings not found! Check.
+Author Ben Marcus ratings not found! Check.
+Author Javier Ruescas ratings not found! Check.
+Author Carl Hiaason ratings not found! Check.
+Author Venedikt Jerofejev ratings not found! Check.
+Author Gordon ratings not found! Check.
+Author Susan Witting Albert ratings not found! Check.
+Author Safran Foer ratings not found! Check.
+Author David Bezmozgis ratings not found! Check.
+Author Tony Tulathimutte ratings not found! Check.
+Author Benedikt Wells ratings not found! Check.
+Author Justin Richards ratings not found! Check.
+Author Andrea Long Chu ratings not found! Check.
+Author Kate Jacoby ratings not found! Check.
+Author Sophocles ratings not found! Check.
+Author Morgan Rice ratings not found! Check.
+Author Martin Myers ratings not found! Check.
+Author Buddha ratings not found! Check.
+Author Durga Chew-Bose ratings not found! Check.
+Author Cole Alpaugh ratings not found! Check.
+Author Junger ratings not found! Check.
+Author Philip Hensher ratings not found! Check.
+Author H.D. ratings not found! Check.
+Author Stephen Frey ratings not found! Check.
+Author Christopher Moore ratings not found! Check.
+Author Mark Pryor ratings not found! Check.
+Author Antje Ravic Strubel ratings not found! Check.
+Author Marçal Aquino ratings not found! Check.
+Author Hilary Thayer Hamann ratings not found! Check.
+Author Stuart turton ratings not found! Check.
+Author Tony Horowitz ratings not found! Check.
+Author Santiago Gamboa ratings not found! Check.
+Author Jean-Philippe Jaworski ratings not found! Check.
+Author Rebecca Ryman ratings not found! Check.
+Author Tino Hanekamp ratings not found! Check.
+Author Mavis Cheek ratings not found! Check.
+Author Harry Bingham ratings not found! Check.
+Author Ford ratings not found! Check.
+Author Vikas Swarup ratings not found! Check.
+Author B. Traven ratings not found! Check.
+Author Mark Danielewski ratings not found! Check.
+Author Amy Tan ratings not found! Check.
+Author Assembly ratings not found! Check.
+Author Louis Wood ratings not found! Check.
+Author Judith Taschler ratings not found! Check.
+Author Peter Illis ratings not found! Check.
+Author Andrea Hirata ratings not found! Check.
+Author Giovanni Boccaccio ratings not found! Check.
+Author Foer ratings not found! Check.
+Author Antonio Orejudo ratings not found! Check.
+Author Jonathan Coe ratings not found! Check.
+Author Ferdinand Von Schirach ratings not found! Check.
+Author Adam Davies ratings not found! Check.
+Author Neal Stephenson ratings not found! Check.
+Author Chuck Dixon ratings not found! Check.
+Author Andrea K Host ratings not found! Check.
+Author James R. Hannibal ratings not found! Check.
+Author Mark Slouka ratings not found! Check.
+Author Julian Baggini ratings not found! Check.
+Author John Irving ratings not found! Check.
+Author Bill Knott ratings not found! Check.
+Author Thomas Raab ratings not found! Check.
+Author Majgull Axelsson ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Victoria Rhodes ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Terry Pratchett ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Guy De La Valdene ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'bool' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Joyce Cary ratings not found! Check.
+Author Ben Marcus ratings not found! Check.
+Author Javier Ruescas ratings not found! Check.
+Author Carl Hiaason ratings not found! Check.
+Author Venedikt Jerofejev ratings not found! Check.
+Author Gordon ratings not found! Check.
+Author Susan Witting Albert ratings not found! Check.
+Author Safran Foer ratings not found! Check.
+Author David Bezmozgis ratings not found! Check.
+Author Tony Tulathimutte ratings not found! Check.
+Author Benedikt Wells ratings not found! Check.
+Author Justin Richards ratings not found! Check.
+Author Andrea Long Chu ratings not found! Check.
+Author Kate Jacoby ratings not found! Check.
+Author Sophocles ratings not found! Check.
+Author Morgan Rice ratings not found! Check.
+Author Martin Myers ratings not found! Check.
+Author Buddha ratings not found! Check.
+Author Durga Chew-Bose ratings not found! Check.
+Author Cole Alpaugh ratings not found! Check.
+Author Junger ratings not found! Check.
+Author Philip Hensher ratings not found! Check.
+Author H.D. ratings not found! Check.
+Author Stephen Frey ratings not found! Check.
+Author Christopher Moore ratings not found! Check.
+Author Mark Pryor ratings not found! Check.
+Author Antje Ravic Strubel ratings not found! Check.
+Author Marçal Aquino ratings not found! Check.
+Author Hilary Thayer Hamann ratings not found! Check.
+Author Stuart turton ratings not found! Check.
+Author Tony Horowitz ratings not found! Check.
+Author Santiago Gamboa ratings not found! Check.
+Author Jean-Philippe Jaworski ratings not found! Check.
+Author Rebecca Ryman ratings not found! Check.
+Author Tino Hanekamp ratings not found! Check.
+Author Mavis Cheek ratings not found! Check.
+Author Harry Bingham ratings not found! Check.
+Author Ford ratings not found! Check.
+Author Vikas Swarup ratings not found! Check.
+Author B. Traven ratings not found! Check.
+Author Mark Danielewski ratings not found! Check.
+Author Amy Tan ratings not found! Check.
+Author Assembly ratings not found! Check.
+Author Louis Wood ratings not found! Check.
+Author Judith Taschler ratings not found! Check.
+Author Peter Illis ratings not found! Check.
+Author Andrea Hirata ratings not found! Check.
+Author Giovanni Boccaccio ratings not found! Check.
+Author Foer ratings not found! Check.
+Author Antonio Orejudo ratings not found! Check.
+Author Jonathan Coe ratings not found! Check.
+Author Ferdinand Von Schirach ratings not found! Check.
+Author Adam Davies ratings not found! Check.
+Author Neal Stephenson ratings not found! Check.
+Author Chuck Dixon ratings not found! Check.
+Author Andrea K Host ratings not found! Check.
+Author James R. Hannibal ratings not found! Check.
+Author Mark Slouka ratings not found! Check.
+Author Julian Baggini ratings not found! Check.
+Author John Irving ratings not found! Check.
+Author Bill Knott ratings not found! Check.
+Author Thomas Raab ratings not found! Check.
+Author Majgull Axelsson ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'list' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Author Victoria Rhodes ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 19, in author_name_check
+    n1 = [s.lower() for s in n1.split()]
+AttributeError: 'bool' object has no attribute 'split'
+Author Andrew Kaufman ratings not found! Check.
+Author William Shakespeare ratings not found! Check.
+Author Roth ratings not found! Check.
+Author Samanta Schweblin ratings not found! Check.
+Author Lauren Kate ratings not found! Check.
+Author Caner Taslaman ratings not found! Check.
+Author Simon Yates ratings not found! Check.
+Author Jonathan Safron Foer ratings not found! Check.
+Author Paulina Flores ratings not found! Check.
+Author Allen Eskens ratings not found! Check.
+Author Fredrick Barton ratings not found! Check.
+Author Rodrigo Hasbun ratings not found! Check.
+Author Karl Marlantes ratings not found! Check.
+Author Gwendoline Riley ratings not found! Check.
+Author Dinty W.Moore ratings not found! Check.
+Author Tan Twan Eng ratings not found! Check.
+Author Mark Amerika ratings not found! Check.
+Author Laura Purcell ratings not found! Check.
+Author Carolina De Robertis ratings not found! Check.
+Author Geoffrey of Monmouth ratings not found! Check.
+Author Elizabeth Johnson ratings not found! Check.
+Author Carmine Abate ratings not found! Check.
+Author Daren King ratings not found! Check.
+Author Hesiod ratings not found! Check.
+Author Ben Fergusson ratings not found! Check.
+Author Marianne Wiggins ratings not found! Check.
+Author Karen Hancock ratings not found! Check.
+Author Daniel Hecht ratings not found! Check.
+Author D.K. Cassidy ratings not found! Check.
+Author Johann Grimmelshausen ratings not found! Check.
+Author Charlotte Bacon ratings not found! Check.
+Author Katja Petrowskaja ratings not found! Check.
+Author Elizabeth Knox ratings not found! Check.
+Author Bill Clegg ratings not found! Check.
+Author Bill Gaston ratings not found! Check.
+Author Robert Moss ratings not found! Check.
+Author Debra Jo Immergut ratings not found! Check.
+Author Mark Dery ratings not found! Check.
+Author Kuipers ratings not found! Check.
+Author Sui Ishida ratings not found! Check.
+Author Helen Mort ratings not found! Check.
+Author Audur Ava Olafsdottir ratings not found! Check.
+Author Naomi Wolf ratings not found! Check.
+Author Saba Imtiaz ratings not found! Check.
+Author Josh Sundquist ratings not found! Check.
+Author Paulo Coelho ratings not found! Check.
+Author Benyamin ratings not found! Check.
+Author Gilbert Simondon ratings not found! Check.
+Author Francesca Melandri ratings not found! Check.
+Author Eduardo Mendicutti ratings not found! Check.
+Author Catherine Lacey ratings not found! Check.
+Author Alexander Dugin ratings not found! Check.
+Author Anna Benson ratings not found! Check.
+Author Keith Gessen ratings not found! Check.
+Author Claudia keelan ratings not found! Check.
+Author Tom Spanbauer ratings not found! Check.
+Author Dr Johnson ratings not found! Check.
+Author Eric Nylund ratings not found! Check.
+Author Hosseini Khaled ratings not found! Check.
+Author Daniel Pellizzari ratings not found! Check.
+Author Lynne Tillman ratings not found! Check.
+Author Shawna Lemay ratings not found! Check.
+Author John Holloway ratings not found! Check.
+Author Sarah Weeks ratings not found! Check.
+Author Garth Risk Hallberg ratings not found! Check.
+Author Lochlan Bloom ratings not found! Check.
+Author Elizabeth Essex ratings not found! Check.
+Author Keith Miller ratings not found! Check.
+Author Robert Macfarlane ratings not found! Check.
+Author Lily Brett ratings not found! Check.
+Author Alexander Theroux ratings not found! Check.
+Author Sofía Segovia ratings not found! Check.
+Author Reuter ratings not found! Check.
+Author Frank Ronan ratings not found! Check.
+Author Jen Wang ratings not found! Check.
+Author marianne Wiggins ratings not found! Check.
+Author John Green ratings not found! Check.
+Author Mauro Saracino ratings not found! Check.
+Author Arthur Sze ratings not found! Check.
+Author Julie Buxbaum ratings not found! Check.
+Author Ayisha Malik ratings not found! Check.
+Author Albert moers ratings not found! Check.
+Author Natalie Diaz ratings not found! Check.
+Author Glenn Cooper ratings not found! Check.
+Author Albert Espinosa ratings not found! Check.
+Author Abdulrazak Gurnah ratings not found! Check.
+Author Eli Amir ratings not found! Check.
+Author Danielle Bennet ratings not found! Check.
+Author Chaucer ratings not found! Check.
+Author Alejandro Zambra ratings not found! Check.
+Author Debi Gliori ratings not found! Check.
+Author Antanas Vienuolis ratings not found! Check.
+Author Arne Dahl ratings not found! Check.
+Author Augusten Burroughs ratings not found! Check.
+Author Remigiusz Mróz ratings not found! Check.
+Author Alison Moore ratings not found! Check.
+Author Ruff ratings not found! Check.
+Author Suki Kim ratings not found! Check.
+Author Fernando Aramburu ratings not found! Check.
+Author Walt Disney ratings not found! Check.
+Author Eric Kraft ratings not found! Check.
+Author Andy Stanton ratings not found! Check.
+Author Howard Jones ratings not found! Check.
+Author Benedict Wells ratings not found! Check.
+Author Cesar Vidal ratings not found! Check.
+Author Gonzalo Torné ratings not found! Check.
+Author Andrew Holleran ratings not found! Check.
+Author Robert Mason ratings not found! Check.
+Author Brooks ratings not found! Check.
+Author Brian Catling ratings not found! Check.
+Author Eshkol Nevo ratings not found! Check.
+Author Paul Hamper ratings not found! Check.
+Author Mikael Torfason ratings not found! Check.
+Author Craig Davidson ratings not found! Check.
+Author Toshikazu Kawaguchi ratings not found! Check.
+Author HOMER ratings not found! Check.
+Author Everet True ratings not found! Check.
+Author Toby Litt ratings not found! Check.
+Author John Adams ratings not found! Check.
+Author Àusias March ratings not found! Check.
+Author Jorge Franco ratings not found! Check.
+Author Nell Zink ratings not found! Check.
+Author Cristovão Tezza ratings not found! Check.
+Author David Housewright ratings not found! Check.
+Author Jennings ratings not found! Check.
+Author Homer ratings not found! Check.
+Author Ellen Kushner ratings not found! Check.
+Author Romana Petri ratings not found! Check.
+Author Marc-Uwe Kling ratings not found! Check.
+Author Alejandra Costamagna ratings not found! Check.
+Author Margaret Atwood ratings not found! Check.
+Author James Hannaham ratings not found! Check.
+Author Alice Faye Duncan ratings not found! Check.
+Author Bruce Fink ratings not found! Check.
+Author Elizabeth Pewsey ratings not found! Check.
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'bool' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'bool' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 44, in goodread_rating
+    author_pgs = driver.find_elements(By.XPATH, xp)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mon/anaconda3/envs/py37/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@itemprop="ratingValue"]"}
+  (Session info: headless chrome=85.0.4183.102)
+
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 48, in goodread_rating
+    for pg in author_pgs:
+TypeError: 'WebElement' object is not iterable
+Traceback (most recent call last):
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 106, in worker
+    goodread_rating(core, author_name)
+  File "/home/mon/Documents/literatureMap/goodreads_rating.py", line 49, in goodread_rating
+    if author_name_check(pg.find_element_by_tag_name('span').text, author_name):
+AttributeError: 'str' object has no attribute 'find_element_by_tag_name'
+Author Victoria Rhodes ratings not found! Check.
+Author Anne Tyler ratings not found! Check.
+Author Laura Kinsale ratings not found! Check.
+Author Column Mccann ratings not found! Check.
+Author Russell ratings not found! Check.
+Author Jan Seghers ratings not found! Check.
+Author Robert Pfaller ratings not found! Check.
+Author Byron ratings not found! Check.
+Author Michele Mari ratings not found! Check.
+Author Samuel Björk ratings not found! Check.
+Author Marta Rojals ratings not found! Check.
+Author Travis ratings not found! Check.
+Author Luc Sante ratings not found! Check.
+Author France Daigle ratings not found! Check.
+Author David Vann ratings not found! Check.
+Author Starhawk ratings not found! Check.
+Author Sepulveda ratings not found! Check.
+Author John Edward Williams ratings not found! Check.
+Author Carl Hiaasen ratings not found! Check.
+Author Tom Lanoye ratings not found! Check.
+Author Lori Lansens ratings not found! Check.
+Author Paul West ratings not found! Check.
+Author Julia Alvarez ratings not found! Check.
+Author Leonie Swann ratings not found! Check.
+Author Jean Luc Bannalec ratings not found! Check.
+Author Paul Burston ratings not found! Check.
+Author Nic Pizzolato ratings not found! Check.
+Author William Sutcliffe ratings not found! Check.
+Author Jonathan Morris ratings not found! Check.
+Author Frank Tallis ratings not found! Check.
+Author Mirja Unge ratings not found! Check.
+Author Jim Grimsley ratings not found! Check.
+Author Peter West ratings not found! Check.
+Author Ann Packer ratings not found! Check.
+Author Jörg Maurer ratings not found! Check.
+Author Stefanie Stahl ratings not found! Check.
+Author Luís de Camões ratings not found! Check.
+Author Josh Lanyon ratings not found! Check.
+Author Chris Kraus ratings not found! Check.
+Author Bill Aitken ratings not found! Check.
+Author Natalie diaz ratings not found! Check.
+Author Oliver Bottini ratings not found! Check.
+Author Michael Gruber ratings not found! Check.
+Author Bobby Akart ratings not found! Check.
+Author Sibylle Berg ratings not found! Check.
+Author John Kulm ratings not found! Check.
+Author Ben Mack ratings not found! Check.
+Author Helle Ryding ratings not found! Check.
+Author Djian ratings not found! Check.
+Author Luís De Camões ratings not found! Check.
+Author Patti Smith ratings not found! Check.
+Author Annie Baker ratings not found! Check.
+Author Douglas Coupland ratings not found! Check.
+Author Nick Lane ratings not found! Check.
+Author Susan Wise Bauer ratings not found! Check.
+Author Bodo Kirchhoff ratings not found! Check.
+Author Philip Eger ratings not found! Check.
+Author Anne Delbee ratings not found! Check.
+Author Philipp Meyer ratings not found! Check.
+Author Phil Hogan ratings not found! Check.
+Author Jeanine Krock ratings not found! Check.
+Author Aristophanes ratings not found! Check.
+Author Steve Tesich ratings not found! Check.
+Author Cathleen Schine ratings not found! Check.
+Author Niall Williams ratings not found! Check.
+Author Daniel Baldacci ratings not found! Check.
+Author Mamerto Menapace ratings not found! Check.
+Author Charlie Lovett ratings not found! Check.
+Author PHIL CUMMINGS ratings not found! Check.
+Author Amelie Fried ratings not found! Check.
+Author Michael David Lukas ratings not found! Check.
+Author Grimmelshausen ratings not found! Check.
+Author Antoine Laurain ratings not found! Check.
+Author Marie Brennan ratings not found! Check.
+Author Andrew Kaufman ratings not found! Check.
+Author William Shakespeare ratings not found! Check.
+Author Roth ratings not found! Check.
+Author Samanta Schweblin ratings not found! Check.
+Author Lauren Kate ratings not found! Check.
+Author Caner Taslaman ratings not found! Check.
+Author Simon Yates ratings not found! Check.
+Author Jonathan Safron Foer ratings not found! Check.
+Author Paulina Flores ratings not found! Check.
+Author Allen Eskens ratings not found! Check.
+Author Fredrick Barton ratings not found! Check.
+Author Rodrigo Hasbun ratings not found! Check.
+Author Karl Marlantes ratings not found! Check.
+Author Gwendoline Riley ratings not found! Check.
+Author Dinty W.Moore ratings not found! Check.
+Author Tan Twan Eng ratings not found! Check.
+Author Mark Amerika ratings not found! Check.
+Author Laura Purcell ratings not found! Check.
+Author Carolina De Robertis ratings not found! Check.
+Author Geoffrey of Monmouth ratings not found! Check.
+Author Elizabeth Johnson ratings not found! Check.
+Author Carmine Abate ratings not found! Check.
+Author Daren King ratings not found! Check.
+Author Hesiod ratings not found! Check.
+Author Ben Fergusson ratings not found! Check.
+Author Marianne Wiggins ratings not found! Check.
+Author Karen Hancock ratings not found! Check.
+Author Daniel Hecht ratings not found! Check.
+Author D.K. Cassidy ratings not found! Check.
+Author Johann Grimmelshausen ratings not found! Check.
+Author Charlotte Bacon ratings not found! Check.
+Author Katja Petrowskaja ratings not found! Check.
+Author Elizabeth Knox ratings not found! Check.
+Author Bill Clegg ratings not found! Check.
+Author Bill Gaston ratings not found! Check.
+Author Robert Moss ratings not found! Check.
+Author Debra Jo Immergut ratings not found! Check.
+Author Mark Dery ratings not found! Check.
+Author Kuipers ratings not found! Check.
+Author Sui Ishida ratings not found! Check.
+Author Helen Mort ratings not found! Check.
+Author Audur Ava Olafsdottir ratings not found! Check.
+Author Naomi Wolf ratings not found! Check.
+Author Saba Imtiaz ratings not found! Check.
+Author Josh Sundquist ratings not found! Check.
+Author Paulo Coelho ratings not found! Check.
+Author Benyamin ratings not found! Check.
+Author Kathryn Kramer ratings not found! Check.
+Author Gilbert Simondon ratings not found! Check.
+Author Francesca Melandri ratings not found! Check.
+Author Eduardo Mendicutti ratings not found! Check.
+Author Catherine Lacey ratings not found! Check.
+Author Alexander Dugin ratings not found! Check.
+Author Anna Benson ratings not found! Check.
+Author Keith Gessen ratings not found! Check.
+Author Claudia keelan ratings not found! Check.
+Author Tom Spanbauer ratings not found! Check.
+Author Dr Johnson ratings not found! Check.
+Author Eric Nylund ratings not found! Check.
+Author Hosseini Khaled ratings not found! Check.
+Author Daniel Pellizzari ratings not found! Check.
+Author Lynne Tillman ratings not found! Check.
+Author Shawna Lemay ratings not found! Check.
+Author John Holloway ratings not found! Check.
+Author Sarah Weeks ratings not found! Check.
+Author Garth Risk Hallberg ratings not found! Check.
+Author Lochlan Bloom ratings not found! Check.
+Author Elizabeth Essex ratings not found! Check.
