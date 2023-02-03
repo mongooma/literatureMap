@@ -1,0 +1,29 @@
+This project is composed of several scripts:
+
+1. ```map_scrape_main```: Scrape the map provided by https://www.literature-map.com/
+
+    Starting from "Haruki Murakami" and iteratively add sites to be inspected to the queue
+    (use n workers), save the site and its observable neighbors
+
+2. ```cluster_analysis```: Once the map (or snapshot) is ready, get your cluster of writers
+    - /log/p1, ~4000 writers
+
+    (J.K.Rowling, Ted Chiang are in P0, along with the authors of the mass market books.)
+
+3. Once the cluster is achieved, go to Goodreads for the ```user ratings, DOB/Birth Place, genres```, select top 10% of the cluster of writers as
+    the writers of interest  (keep the rest for backup info)
+
+    (Pending: **something wrong with the result saving**)
+
+
+4. Once the list of authors is achieved, go to wiki for the authors' information (**currently, get the info cards only**)
+
+   (got 2000/~4000)
+
+
+
+Finally, Collect these information and put them in a tsv file, and then in chunks of spreadsheet - grouped by ```nationalities/DOB```
+for further use.
+
+
+
