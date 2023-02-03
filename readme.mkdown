@@ -26,4 +26,9 @@ Finally, Collect these information and put them in a tsv file, and then in chunk
 for further use.
 
 
+The clusters of the writers:
+<img width="391" alt="Screen Shot 2023-02-03 at 4 19 32 PM" src="https://user-images.githubusercontent.com/3526618/216724047-0c468a0d-dd3e-49bf-8e8f-c58860da14e0.png">
+
+
+
 
